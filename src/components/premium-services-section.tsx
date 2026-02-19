@@ -12,7 +12,7 @@ import {
 
 export default function PremiumServicesSection() {
   const baseCardClassName =
-    "glass-card relative overflow-hidden rounded-2xl transition-all duration-300 will-change-transform";
+    "glass-card relative overflow-hidden rounded-2xl transition-all duration-300 will-change-transform cursor-pointer";
   const hoverCardClassName = "hover:-translate-y-0.5";
   const borderClassName = "ring-1 ring-border/60";
   const highlightClassName =
@@ -31,7 +31,7 @@ export default function PremiumServicesSection() {
 
           <button
             type="button"
-            className="text-primary flex items-center gap-2 font-bold hover:underline"
+            className="text-primary cursor-pointer flex items-center gap-2 font-bold hover:underline"
           >
             Tous les services
             <span aria-hidden>›</span>
