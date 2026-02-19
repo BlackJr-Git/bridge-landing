@@ -8,10 +8,12 @@ export default function InvestmentEventSection() {
       <div className="mx-auto grid max-w-7xl gap-8 px-6 md:grid-cols-2">
         <div className="glass-card flex flex-col justify-between rounded-3xl border border-white/5 p-10">
           <div>
-            <h3 className="mb-4 text-2xl font-bold">Guide du Coût de la vie</h3>
+            <h3 className="mb-4 text-2xl font-bold">
+              Comprendre avant d'investir
+            </h3>
             <p className="mb-6 text-slate-400">
-              Comparez Kinshasa avec Paris ou Bruxelles. Un simulateur précis
-              pour vos futurs budgets de vie.
+              Coût de la vie RDC | Dépenser intelligemment | Stratégies
+              d'épargne
             </p>
           </div>
           <div>
