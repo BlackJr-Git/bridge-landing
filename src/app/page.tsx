@@ -3,6 +3,7 @@ import SolutionsSection from "@/components/solutions-section";
 import PremiumServicesSection from "@/components/premium-services-section";
 import InvestmentEventSection from "@/components/investment-event-section";
 import ContactSection from "@/components/contact-section";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <InvestmentEventSection />
         <ContactSection />
       </main>
+      <Footer />
     </div>
   );
 }
