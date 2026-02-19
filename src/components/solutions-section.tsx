@@ -10,7 +10,8 @@ type SolutionCard = {
 const solutions: SolutionCard[] = [
   {
     title: "Diaspora",
-    description: "Préparez votre retour définitif ou gérez vos projets à distance.",
+    description:
+      "Préparez votre retour définitif ou gérez vos projets à distance.",
     imageAlt: "Professional man representing Diaspora",
     imageSrc:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCJJHSHJNL9URk46DWsvHdXaB_a4YdcHsMdvRCQRcBJDlbsiKqGaDxDOZuh_j3wVHRgHjclCxe8zBiZgQSWBMsaR7rYnIC41RM8H5XAExZGlnF--IsvUWos2KKzr0Col6Hd-VXP7Zk9euTYgqRUIwzXCU1KRcrvRwCt0aoL5lLb13SEbnX5SKuARZQXXbfeML0XUDQsZ7Qe2pLm5ZNAx5Ff2ABJiq7KXaorz532x0l_0nWCfXy7NM8QtT9na7-Ks_iA2RcjwP88HaMI",
@@ -25,7 +26,8 @@ const solutions: SolutionCard[] = [
   },
   {
     title: "Investisseurs",
-    description: "Identifiez les opportunités et sécurisez vos opérations foncières.",
+    description:
+      "Identifiez les opportunités et sécurisez vos opérations foncières.",
     imageAlt: "Investor meeting room",
     imageSrc:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuDJuHDO0PDQZR3ohdG-0OEMbTda5N-S9-OnJgbs6cZWljay3slrnu6rbg1HOMl7VqliZAF_IfKK7Qz8HtPR--K0ZVEmYd-81i9DvnPHJGlzCLLRFAtpC5M7DSaWALCCkmdQreSEl0OEovNJnaCx75Uixue9NDQH-eFdYL5APPXfyup57v35rkW-B5Sf_NP1dcaBGtmZHjEoydQ92pFTyXwfem9BPI2O89ZyR1_uZ86JgiW_8ikSLUBPMtf2mnp850VhyXDa32qjPYq3",
@@ -55,14 +57,14 @@ export default function SolutionsSection() {
           {solutions.map((solution) => (
             <div
               key={solution.title}
-              className="group relative aspect-[3/4] cursor-pointer overflow-hidden rounded-2xl"
+              className="group relative aspect-3/4 cursor-pointer overflow-hidden rounded-2xl"
             >
               <img
                 alt={solution.imageAlt}
                 className="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-110"
                 src={solution.imageSrc}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80" />
+              <div className="absolute inset-0 bg-linear-to-t from-secondary via-transparent to-transparent opacity-80" />
               <div className="absolute bottom-0 p-8">
                 <h3 className="mb-2 text-2xl font-bold text-white">
                   {solution.title}

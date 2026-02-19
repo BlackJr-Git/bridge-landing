@@ -1,10 +1,11 @@
 "use client";
 import WorldMap from "@/components/ui/world-map";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 export default function WorldMapDemo() {
   return (
-    <div className=" dark:bg-black bg-white w-full">
+    <div className="w-full bg-white dark:bg-black">
       {/* <div className="max-w-7xl mx-auto text-center">
         <p className="font-bold text-xl md:text-4xl dark:text-white text-black">
           Remote{" "}
@@ -45,7 +46,7 @@ export default function WorldMapDemo() {
             end: { lat: -44.7566, lng: 23.1814 }, // Pretoria
           },
           {
-            start: { lat: -15.7975, lng: -47.8919 }, // Brazil (Brasília)
+            start: { lat: -23.7975, lng: -47.8919 }, // Brazil (Brasília)
             end: { lat: 38.7223, lng: -9.1393 }, // Lisbon
           },
           {

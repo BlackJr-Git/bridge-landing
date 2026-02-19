@@ -210,91 +210,62 @@ export default function HeroSection() {
           </div>
         </section>
         <section className="bg-background pb-16 pt-16 md:pb-32">
-          <div className="group relative m-auto max-w-5xl px-6">
-            <div className="absolute inset-0 z-10 flex scale-95 items-center justify-center opacity-0 duration-500 group-hover:scale-100 group-hover:opacity-100">
-              <Link
-                href="/"
-                className="block text-sm duration-150 hover:opacity-75"
-              >
-                <span> Meet Our Customers</span>
-
-                <ChevronRight className="ml-1 inline-block size-3" />
-              </Link>
+          <div className="m-auto max-w-5xl px-6">
+            <div className="mx-auto max-w-3xl text-center">
+              <h2 className="text-2xl font-semibold md:text-3xl">
+                Présence Internationale
+              </h2>
             </div>
-            <div className="group-hover:blur-xs mx-auto mt-12 grid max-w-2xl grid-cols-4 gap-x-12 gap-y-8 transition-all duration-500 group-hover:opacity-50 sm:gap-x-16 sm:gap-y-14">
-              <div className="flex">
-                <img
-                  className="mx-auto h-5 w-fit dark:invert"
-                  src="https://html.tailus.io/blocks/customers/nvidia.svg"
-                  alt="Nvidia Logo"
-                  height="20"
-                  width="auto"
+
+            <div className="mx-auto mt-10 flex max-w-4xl flex-wrap items-center justify-center gap-x-10 gap-y-6">
+              <div className="flex items-center gap-3">
+                <Image
+                  src="/flags/drc_flag.png"
+                  alt="Drapeau RDC"
+                  width={36}
+                  height={26}
+                  className="rounded-sm"
                 />
+                <span className="text-sm font-medium md:text-base">
+                  RDC — Hub principal
+                </span>
               </div>
 
-              <div className="flex">
-                <img
-                  className="mx-auto h-4 w-fit dark:invert"
-                  src="https://html.tailus.io/blocks/customers/column.svg"
-                  alt="Column Logo"
-                  height="16"
-                  width="auto"
+              <div className="flex items-center gap-3">
+                <Image
+                  src="/flags/france_flag.png"
+                  alt="Drapeau France"
+                  width={36}
+                  height={26}
+                  className="rounded-sm"
                 />
-              </div>
-              <div className="flex">
-                <img
-                  className="mx-auto h-4 w-fit dark:invert"
-                  src="https://html.tailus.io/blocks/customers/github.svg"
-                  alt="GitHub Logo"
-                  height="16"
-                  width="auto"
-                />
-              </div>
-              <div className="flex">
-                <img
-                  className="mx-auto h-5 w-fit dark:invert"
-                  src="https://html.tailus.io/blocks/customers/nike.svg"
-                  alt="Nike Logo"
-                  height="20"
-                  width="auto"
-                />
-              </div>
-              <div className="flex">
-                <img
-                  className="mx-auto h-5 w-fit dark:invert"
-                  src="https://html.tailus.io/blocks/customers/lemonsqueezy.svg"
-                  alt="Lemon Squeezy Logo"
-                  height="20"
-                  width="auto"
-                />
-              </div>
-              <div className="flex">
-                <img
-                  className="mx-auto h-4 w-fit dark:invert"
-                  src="https://html.tailus.io/blocks/customers/laravel.svg"
-                  alt="Laravel Logo"
-                  height="16"
-                  width="auto"
-                />
-              </div>
-              <div className="flex">
-                <img
-                  className="mx-auto h-7 w-fit dark:invert"
-                  src="https://html.tailus.io/blocks/customers/lilly.svg"
-                  alt="Lilly Logo"
-                  height="28"
-                  width="auto"
-                />
+                <span className="text-sm font-medium md:text-base">France</span>
               </div>
 
-              <div className="flex">
-                <img
-                  className="mx-auto h-6 w-fit dark:invert"
-                  src="https://html.tailus.io/blocks/customers/openai.svg"
-                  alt="OpenAI Logo"
-                  height="24"
-                  width="auto"
+              <div className="flex items-center gap-3">
+                <Image
+                  src="/flags/belgium_flag.png"
+                  alt="Drapeau Belgique"
+                  width={36}
+                  height={26}
+                  className="rounded-sm"
                 />
+                <span className="text-sm font-medium md:text-base">
+                  Belgique
+                </span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <Image
+                  src="/flags/south_african_flag.png"
+                  alt="Drapeau Afrique du Sud"
+                  width={36}
+                  height={26}
+                  className="rounded-sm"
+                />
+                <span className="text-sm font-medium md:text-base">
+                  Afrique du Sud
+                </span>
               </div>
             </div>
           </div>
