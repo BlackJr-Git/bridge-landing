@@ -1,6 +1,8 @@
 import HeroSection from "@/components/hero-section";
 import SolutionsSection from "@/components/solutions-section";
 import PremiumServicesSection from "@/components/premium-services-section";
+import InvestmentEventSection from "@/components/investment-event-section";
+import ContactSection from "@/components/contact-section";
 
 export default function Home() {
   return (
@@ -9,6 +11,8 @@ export default function Home() {
         <HeroSection />
         <SolutionsSection />
         <PremiumServicesSection />
+        <InvestmentEventSection />
+        <ContactSection />
       </main>
     </div>
   );
