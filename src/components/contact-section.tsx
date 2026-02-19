@@ -1,89 +1,118 @@
+"use client";
+
 import React from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import {
+  Combobox,
+  ComboboxChips,
+  ComboboxChip,
+  ComboboxChipsInput,
+  ComboboxContent,
+  ComboboxEmpty,
+  ComboboxItem,
+  ComboboxList,
+  useComboboxAnchor,
+} from "@/components/ui/combobox";
+
+const profiles = [
+  { value: "diaspora", label: "Diaspora" },
+  { value: "expat", label: "Expat" },
+  { value: "investisseur", label: "Investisseur" },
+  { value: "retraite", label: "Retraité" },
+  { value: "autre", label: "Autre" },
+];
 
 export default function ContactSection() {
+  const [selectedProfiles, setSelectedProfiles] = React.useState<string[]>([]);
+  const anchor = useComboboxAnchor();
+
   return (
     <section className="bg-card-dark/20 py-24" id="contact">
       <div className="mx-auto max-w-3xl px-6">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-4xl font-black">Prêt à franchir le pas ?</h2>
           <p className="text-slate-400">
-            Laissez-nous vos coordonnées, un expert Bridge vous recontactera sous
-            24h.
+            Laissez-nous vos coordonnées, un expert Bridge vous recontactera
+            sous 24h.
           </p>
         </div>
 
         <form className="space-y-6">
           <div className="grid gap-6 md:grid-cols-2">
             <div className="space-y-2">
-              <label
-                htmlFor="fullname"
-                className="ml-1 text-sm font-bold text-slate-400"
-              >
+              <Label htmlFor="fullname" className="ml-1 text-slate-400">
                 Nom Complet
-              </label>
-              <input
+              </Label>
+              <Input
                 id="fullname"
                 type="text"
                 placeholder="Jean Dupont"
-                className="focus:border-primary focus:ring-primary bg-background-dark h-14 w-full rounded-xl border border-white/10 px-6 text-white"
+                className="h-14 rounded-xl"
               />
             </div>
 
             <div className="space-y-2">
-              <label
-                htmlFor="email"
-                className="ml-1 text-sm font-bold text-slate-400"
-              >
+              <Label htmlFor="email" className="ml-1 text-slate-400">
                 Email
-              </label>
-              <input
+              </Label>
+              <Input
                 id="email"
                 type="email"
                 placeholder="jean@exemple.com"
-                className="focus:border-primary focus:ring-primary bg-background-dark h-14 w-full rounded-xl border border-white/10 px-6 text-white"
+                className="h-14 rounded-xl"
               />
             </div>
           </div>
 
           <div className="space-y-2">
-            <label
-              htmlFor="profile"
-              className="ml-1 text-sm font-bold text-slate-400"
+            <Label className="ml-1 text-slate-400">Votre Profil</Label>
+            <Combobox
+              value={selectedProfiles}
+              onValueChange={setSelectedProfiles}
+              multiple
             >
-              Votre Profil
-            </label>
-            <select
-              id="profile"
-              className="focus:border-primary focus:ring-primary bg-background-dark h-14 w-full appearance-none rounded-xl border border-white/10 px-6 text-white"
-            >
-              <option>Diaspora</option>
-              <option>Expat</option>
-              <option>Investisseur</option>
-              <option>Autre</option>
-            </select>
+              <ComboboxChips ref={anchor} className="min-h-14 rounded-xl">
+                {selectedProfiles.map((value) => {
+                  const profile = profiles.find((p) => p.value === value);
+                  return (
+                    <ComboboxChip key={value}>{profile?.label}</ComboboxChip>
+                  );
+                })}
+                <ComboboxChipsInput placeholder="Sélectionnez vos profils" />
+              </ComboboxChips>
+              <ComboboxContent anchor={anchor}>
+                <ComboboxList>
+                  {profiles.map((profile) => (
+                    <ComboboxItem key={profile.value} value={profile.value}>
+                      {profile.label}
+                    </ComboboxItem>
+                  ))}
+                </ComboboxList>
+                <ComboboxEmpty>Aucun profil trouvé</ComboboxEmpty>
+              </ComboboxContent>
+            </Combobox>
           </div>
 
           <div className="space-y-2">
-            <label
-              htmlFor="message"
-              className="ml-1 text-sm font-bold text-slate-400"
-            >
+            <Label htmlFor="message" className="ml-1 text-slate-400">
               Message
-            </label>
+            </Label>
             <textarea
               id="message"
               rows={4}
               placeholder="Comment pouvons-nous vous aider ?"
-              className="focus:border-primary focus:ring-primary bg-background-dark w-full rounded-xl border border-white/10 p-6 text-white"
+              className="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input w-full rounded-xl border bg-transparent p-6 text-base shadow-xs outline-none transition-[color,box-shadow] focus-visible:ring-[3px] aria-invalid:ring-[3px] disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
             />
           </div>
 
-          <button
+          <Button
             type="submit"
-            className="bg-primary text-background-dark h-16 w-full rounded-xl text-xl font-black transition-transform hover:scale-[1.01]"
+            className="h-16 w-full rounded-xl text-xl font-black transition-transform hover:scale-[1.01]"
           >
             Envoyer ma demande
-          </button>
+          </Button>
         </form>
       </div>
     </section>
