@@ -7,6 +7,7 @@ import ClubBridgeSection from "@/components/club-bridge-section";
 import InvestmentEventSection from "@/components/investment-event-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
+import WhatsAppButton from "@/components/whatsapp-button";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <ContactSection />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }
