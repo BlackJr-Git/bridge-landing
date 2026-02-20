@@ -20,37 +20,37 @@ export default function ClubBridgeSection() {
       icon: Users,
       title: "Networking privé",
       description: "Rencontres exclusives entre membres de la communauté",
-      image: "/welcome_img.jpg",
+      image: "/net_events.jpg",
     },
     {
       icon: MessageSquare,
       title: "Tables action",
       description: "Sessions de travail collaboratif et échange d'idées",
-      image: "/assistance_img.jpg",
+      image: "/group_workstation.jpg",
     },
     {
       icon: MapPin,
       title: "Visites terrain",
       description: "Découverte d'opportunités et de projets concrets",
-      image: "/welcome_img.jpg",
+      image: "/ground_visit.jpg",
     },
     {
       icon: GraduationCap,
       title: "Coaching installation",
       description: "Accompagnement personnalisé pour votre installation",
-      image: "/assistance_img.jpg",
+      image: "/relocation_ast.jpg",
     },
     {
       icon: TrendingUp,
       title: "Éducation financière",
       description: "Formation sur l'investissement et la gestion financière",
-      image: "/welcome_img.jpg",
+      image: "/fin_advices.jpg",
     },
     {
       icon: Sparkles,
       title: "Soirées communauté",
       description: "Événements conviviaux pour tisser des liens durables",
-      image: "/assistance_img.jpg",
+      image: "/community_events.jpg",
     },
   ];
 
@@ -76,8 +76,23 @@ export default function ClubBridgeSection() {
         </div>
 
         <div className="mb-12 grid gap-8 lg:grid-cols-2">
-          <div className="relative overflow-hidden rounded-2xl bg-blue-400">
-            <div className="relative h-[600px] w-full">
+          <div className="flex flex-col gap-4">
+            {/* <div className="flex justify-center gap-2">
+              {activities.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setActiveIndex(index)}
+                  className={`h-2 rounded-full transition-all duration-300 ${
+                    index === activeIndex
+                      ? "bg-primary w-8"
+                      : "bg-muted-foreground/50 w-2 hover:bg-muted-foreground/80"
+                  }`}
+                  aria-label={`Aller à l'activité ${index + 1}`}
+                />
+              ))}
+            </div> */}
+
+            <div className="relative h-full min-h-[600px] overflow-hidden rounded-2xl">
               {activities.map((activity, index) => (
                 <div
                   key={index}
@@ -104,7 +119,7 @@ export default function ClubBridgeSection() {
               ))}
             </div>
 
-            <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
+            <div className="flex justify-center gap-2">
               {activities.map((_, index) => (
                 <button
                   key={index}
@@ -112,7 +127,7 @@ export default function ClubBridgeSection() {
                   className={`h-2 rounded-full transition-all duration-300 ${
                     index === activeIndex
                       ? "bg-primary w-8"
-                      : "bg-white/50 w-2 hover:bg-white/80"
+                      : "bg-muted-foreground/50 w-2 hover:bg-muted-foreground/80"
                   }`}
                   aria-label={`Aller à l'activité ${index + 1}`}
                 />
