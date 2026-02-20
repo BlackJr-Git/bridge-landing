@@ -50,7 +50,7 @@ export default function ClubBridgeSection() {
   ];
 
   return (
-    <section className="bg-background py-24">
+    <section className="bg-background py-24 " id="club">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-16 text-center">
           <div className="mb-4 flex items-center justify-center gap-2">
@@ -92,7 +92,7 @@ export default function ClubBridgeSection() {
           })}
         </div>
 
-        <div className="bg-primary/5 border-primary/20 rounded-2xl border p-8 text-center">
+        {/* <div className="bg-primary/5 border-primary/20 rounded-2xl border p-8 text-center">
           <p className="mb-6 text-xl font-bold">
             👉 Présenter les 6 activités mensuelles
           </p>
@@ -104,7 +104,7 @@ export default function ClubBridgeSection() {
               En savoir plus
             </Button>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

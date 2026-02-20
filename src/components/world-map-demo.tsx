@@ -33,21 +33,18 @@ export default function WorldMapDemo() {
         dots={[
           {
             start: {
-              lat: 64.2008,
-              lng: -149.4937,
+              lat: 40.2008,
+              lng: -100.4937,
             }, // Alaska (Fairbanks)
-            end: {
-              lat: 34.0522,
-              lng: -118.2437,
-            }, // Los Angeles
+            end: { lat: -13.3424, lng: 15.3039 }, // Los Angeles
           },
           {
-            start: { lat: -13.3424, lng: 15.3039 }, // Kinshasa
+            start: { lat: -13.3424, lng: 15.3039 }, // Kinshasa  
             end: { lat: -44.7566, lng: 23.1814 }, // Pretoria
           },
           {
             start: { lat: -23.7975, lng: -47.8919 }, // Brazil (Brasília)
-            end: { lat: 38.7223, lng: -9.1393 }, // Lisbon
+            end: { lat: -13.3424, lng: 15.3039 }, // Lisbon
           },
           {
             start: { lat: 38.8566, lng: 2.3522 }, // Paris

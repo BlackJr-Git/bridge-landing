@@ -69,7 +69,7 @@ export default function SolutionsSection() {
                 <h3 className="mb-2 text-2xl font-bold text-white">
                   {solution.title}
                 </h3>
-                <p className="text-sm text-slate-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <p className="text-sm text-slate-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   {solution.description}
                 </p>
               </div>

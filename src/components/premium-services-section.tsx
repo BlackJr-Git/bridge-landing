@@ -19,7 +19,7 @@ export default function PremiumServicesSection() {
     "before:pointer-events-none before:absolute before:inset-0 before:bg-[radial-gradient(80%_60%_at_50%_0%,hsl(var(--ring)/0.22)_0%,transparent_70%)] before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100";
 
   return (
-    <section className="bg-card-dark/30 py-24">
+    <section id="services" className="bg-card-dark/30 py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-12 flex items-end justify-between">
           <div>
@@ -108,7 +108,7 @@ export default function PremiumServicesSection() {
           <div
             className={`${baseCardClassName} ${hoverCardClassName} ${borderClassName} ${highlightClassName} col-span-3 flex items-center gap-6 p-6`}
           >
-            <PiggyBank className="text-accent-gold size-10" />
+            <PiggyBank className="text-primary size-10" />
             <div>
               <h3 className="text-accent-gold text-sm font-bold">
                 Stratégies d&apos;épargne

@@ -7,16 +7,17 @@ import { Input } from "@/components/ui/input";
 import { Logo } from "@/components/logo";
 
 const quickLinks = [
-  { href: "#", label: "Nos Services" },
-  { href: "#", label: "Le Club Bridge" },
-  { href: "#", label: "Blog & Guides" },
-  { href: "#", label: "Espace Presse" },
+  { href: "#services", label: "Nos Services" },
+  { href: "#club", label: "Le Club Bridge" },
+  // { href: "#", label: "Blog & Guides" },
+  // { href: "#", label: "Espace Presse" },
 ];
 
 const offices = [
   { location: "Kinshasa, Gombe" },
   { location: "Paris, 8ème Arr." },
   { location: "Bruxelles, Ixelles" },
+  { location: "Pretoria, Adressee" },
 ];
 
 const legalLinks = [

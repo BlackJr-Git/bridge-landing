@@ -14,7 +14,6 @@ export default function PositioningSection() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-16 text-center">
           <div className="mb-4 flex items-center justify-center gap-2">
-            <span className="text-4xl">🌍</span>
             <h2 className="text-4xl font-black">Bridge, c'est quoi ?</h2>
           </div>
           <p className="text-muted-foreground mx-auto max-w-3xl text-lg">

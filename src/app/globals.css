@@ -3,7 +3,9 @@
 @import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
-
+/* --secondary: oklch(0.6991 0.1971 11.1943); 
+--primary: oklch(0.2985 0.1203 259.779);
+*/
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.2985 0.1203 259.779);
@@ -11,9 +13,9 @@
   --card-foreground: oklch(0.2985 0.1203 259.779);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.2985 0.1203 259.779);
-  --primary: oklch(0.2985 0.1203 259.779);
+  --primary: oklch(0.6991 0.1971 11.1943);
   --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.6991 0.1971 11.1943);
+  --secondary: oklch(0.2985 0.1203 259.779);
   --secondary-foreground: oklch(1 0 0);
   --muted: oklch(0.9632 0.0034 247.8585);
   --muted-foreground: oklch(0.4276 0.0147 248.1715);
@@ -200,3 +202,6 @@ body {
     @apply bg-card/70 text-card-foreground ring-border/50 ring-1 backdrop-blur-xl;
   }
 } */
+html {
+  scroll-behavior: smooth;
+}

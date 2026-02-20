@@ -13,7 +13,7 @@ export default function ServiceSignatureSection() {
         </div>
 
         <div className="grid gap-8 lg:grid-cols-2">
-          <div className="bg-card hover:border-primary/40 group relative overflow-hidden rounded-2xl border border-white/5 transition-all duration-300">
+          <div className="bg-card border-primary/10 group relative overflow-hidden rounded-2xl border transition-all duration-300">
             <div className="relative h-80 w-full overflow-hidden">
               <Image
                 src="/welcome_img.jpg"
@@ -31,7 +31,7 @@ export default function ServiceSignatureSection() {
             </div>
           </div>
 
-          <div className="bg-card hover:border-primary/40 group relative overflow-hidden rounded-2xl border border-white/5 transition-all duration-300">
+          <div className="bg-card border-primary/10 group relative overflow-hidden rounded-2xl border transition-all duration-300">
             <div className="relative h-80 w-full overflow-hidden">
               <Image
                 src="/assistance_img.jpg"

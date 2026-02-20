@@ -6,7 +6,7 @@ export default function InvestmentEventSection() {
   return (
     <section className="bg-background py-24">
       <div className="mx-auto grid max-w-7xl gap-8 px-6 md:grid-cols-2">
-        <div className="glass-card flex flex-col justify-between rounded-3xl border border-white/5 p-10">
+        <div className="glass-card flex flex-col justify-between rounded-3xl border  p-10">
           <div>
             <h3 className="mb-4 text-2xl font-bold">
               Comprendre avant d'investir
@@ -45,12 +45,15 @@ export default function InvestmentEventSection() {
           </div>
           <div className="flex items-center gap-4">
             <span className="text-sm font-bold">Kinshasa | Octobre 2026</span>
-            <button
+            {/* <button
               type="button"
               className="bg-secondary text-secondary-foreground rounded-lg px-6 py-2 font-bold"
             >
               Réserver
-            </button>
+            </button> */}
+            <Button className="bg-[#002868] hover:bg-[#002868]/80 cursor-pointer text-secondary-foreground rounded-lg px-6 py-2 font-bold">
+              Réserver
+            </Button>
           </div>
         </div>
       </div>
