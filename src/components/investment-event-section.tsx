@@ -44,7 +44,7 @@ export default function InvestmentEventSection() {
             </p>
           </div>
           <div className="flex items-center gap-4">
-            <span className="text-sm font-bold">Kinshasa | Octobre 2024</span>
+            <span className="text-sm font-bold">Kinshasa | Octobre 2026</span>
             <button
               type="button"
               className="bg-secondary text-secondary-foreground rounded-lg px-6 py-2 font-bold"
