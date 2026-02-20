@@ -45,7 +45,7 @@ export default function PositioningSection() {
 
         <div className="bg-primary/5 border-primary/20 rounded-2xl border p-8 text-center">
           <p className="text-xl font-bold">
-            👉 Une seule porte d'entrée pour tous vos besoins.
+            Une seule porte d'entrée pour tous vos besoins.
           </p>
         </div>
       </div>
