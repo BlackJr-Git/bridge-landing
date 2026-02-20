@@ -175,7 +175,7 @@ export default function ClubBridgeSection() {
 
         <div className="bg-primary/5 border-primary/20 rounded-2xl border p-8 text-center">
           <p className="mb-6 text-xl font-bold">
-            👉 Rejoignez notre communauté exclusive
+            Rejoignez notre communauté exclusive
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button size="lg" className="font-bold">
