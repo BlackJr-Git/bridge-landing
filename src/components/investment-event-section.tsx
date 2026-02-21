@@ -22,7 +22,7 @@ export default function InvestmentEventSection() {
               type="button"
               className="rounded-lg py-2 font-bold w-fit"
             >
-              Découvrir le guide
+              Contacter un conseiller
             </Button>
           </div>
         </div>

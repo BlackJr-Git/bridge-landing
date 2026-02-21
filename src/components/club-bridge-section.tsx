@@ -67,7 +67,7 @@ export default function ClubBridgeSection() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-16 text-center">
           <div className="mb-4 flex items-center justify-center gap-2">
-            <h2 className="text-4xl font-black">Club Bridge</h2>
+            <h2 className="text-4xl font-black">Bridge Club</h2>
           </div>
           <p className="text-muted-foreground mx-auto mb-8 max-w-2xl text-lg">
             Communauté exclusive avec événements mensuels, networking diaspora
@@ -173,17 +173,17 @@ export default function ClubBridgeSection() {
           </div>
         </div>
 
-        <div className="bg-primary/5 border-primary/20 rounded-2xl border p-8 text-center">
-          <p className="mb-6 text-xl font-bold">
+        <div className="bg-primary border-primary/20 rounded-2xl border p-8 text-center">
+          <p className="mb-6 text-xl font-bold text-primary-foreground">
             Rejoignez notre communauté exclusive
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" className="font-bold">
+            <Button size="lg" className="font-bold bg-secondary">
               Rejoindre le Club Bridge
             </Button>
-            <Button size="lg" variant="outline" className="font-bold">
+            {/* <Button size="lg" variant="outline" className="font-bold">
               En savoir plus
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
