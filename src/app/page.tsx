@@ -5,7 +5,7 @@ import PremiumServicesSection from "@/components/premium-services-section";
 import ServiceSignatureSection from "@/components/service-signature-section";
 import ClubBridgeSection from "@/components/club-bridge-section";
 import InvestmentEventSection from "@/components/investment-event-section";
-import Testimonials from "@/components/testimonials";
+import BeforeAfterTestimonials from "@/components/before-after-testimonials";
 import ContactSection from "@/components/contact-section";
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
       <ServiceSignatureSection />
       <ClubBridgeSection />
       <InvestmentEventSection />
-      <Testimonials />
+      <BeforeAfterTestimonials />
       <ContactSection />
     </main>
   );

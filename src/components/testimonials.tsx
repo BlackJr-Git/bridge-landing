@@ -98,7 +98,7 @@ export default function Testimonials() {
                   régulier.
                 </p>
 
-                <div className="grid items-center gap-3 [grid-template-columns:auto_1fr]">
+                <div className="grid items-center gap-3 grid-cols-[auto_1fr]">
                   <Avatar className="size-12">
                     <AvatarImage
                       src="https://tailus.io/images/reviews/yucel.webp"
