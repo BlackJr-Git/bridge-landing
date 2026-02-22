@@ -9,8 +9,8 @@ import {
   Shield,
   Target,
   Heart,
-  ArrowRight,
 } from "lucide-react";
+import CallToAction from "@/components/call-to-action";
 
 const stats = [
   {
@@ -200,45 +200,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-slate-50 py-20 md:py-28">
-        <div className="container mx-auto max-w-4xl px-6 text-center">
-          <h2 className="mb-8 text-3xl font-bold text-[#454F80] md:text-4xl">
-            Avec <span className="text-primary">Bridge</span>, vous ne revenez
-            plus seul.
-          </h2>
-
-          <div className="mb-10 space-y-2 text-xl text-[#454F80]/70">
-            <p>
-              Vous revenez <strong className="text-[#454F80]">préparé</strong>.
-            </p>
-            <p>
-              Vous investissez en{" "}
-              <strong className="text-[#454F80]">confiance</strong>.
-            </p>
-            <p>
-              Vous construisez avec{" "}
-              <strong className="text-[#454F80]">sérénité</strong>.
-            </p>
-          </div>
-
-          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a
-              href="/contact"
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white transition-all hover:bg-[#d94459] hover:shadow-lg"
-            >
-              Nous contacter
-              <ArrowRight className="size-5" />
-            </a>
-            <a
-              href="/services"
-              className="inline-flex items-center gap-2 rounded-full border-2 border-[#454F80]/20 px-8 py-4 text-lg font-semibold text-[#454F80] transition-all hover:border-[#454F80]/40 hover:bg-[#454F80]/5"
-            >
-              Découvrir nos services
-            </a>
-          </div>
-        </div>
-      </section>
+      <CallToAction />
     </div>
   );
 }

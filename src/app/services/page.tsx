@@ -12,6 +12,7 @@ import {
   Clock,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import CallToAction from "@/components/call-to-action";
 
 const services = [
   {
@@ -259,32 +260,7 @@ export default function ServicesPage() {
         })}
       </div>
 
-      {/* CTA Section */}
-      <section className="bg-secondary py-20 text-white md:py-28">
-        <div className="container mx-auto max-w-4xl px-6 text-center">
-          <h2 className="mb-6 text-3xl font-bold md:text-4xl">
-            Un besoin spécifique ?
-          </h2>
-          <p className="mx-auto mb-10 max-w-2xl text-lg text-white/80">
-            Chaque situation est unique. Contactez-nous pour un accompagnement
-            sur mesure adapté à vos besoins.
-          </p>
-          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-full bg-[#EF4F67] px-8 py-4 text-lg font-semibold text-white transition-all hover:bg-[#d94459] hover:shadow-lg"
-            >
-              Nous contacter
-            </a>
-            <a
-              href="/#services"
-              className="inline-flex items-center justify-center rounded-full border-2 border-white/30 px-8 py-4 text-lg font-semibold text-white transition-all hover:border-white hover:bg-white/10"
-            >
-              Retour à l'accueil
-            </a>
-          </div>
-        </div>
-      </section>
+      <CallToAction />
     </div>
   );
 }
