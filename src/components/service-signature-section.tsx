@@ -72,7 +72,7 @@ const services = [
 
 export default function ServiceSignatureSection() {
   return (
-    <section className="bg-gradient-to-b from-slate-50/50 to-white py-24">
+    <section className="bg-linear-to-b from-slate-50/50 to-white py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-4xl font-black md:text-5xl">

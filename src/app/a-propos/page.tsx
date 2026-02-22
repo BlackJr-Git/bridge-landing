@@ -159,7 +159,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-br bg-secondary py-20 text-white md:py-28">
+      <section className="bg-linear-to-br bg-secondary py-20 text-white md:py-28">
         <div className="container mx-auto max-w-4xl px-6 text-center">
           <h2 className="mb-6 text-3xl font-bold md:text-4xl">
             Avec <span className="text-[#EF4F67]">Bridge</span>, vous ne revenez plus seul.
