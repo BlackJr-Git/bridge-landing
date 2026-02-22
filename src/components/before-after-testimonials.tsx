@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Users,
@@ -14,6 +15,9 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 type Testimonial = {
+  name: string;
+  avatar: string;
+  location: string;
   avant: string;
   difficulte: string;
   avecBridge: string;
@@ -33,33 +37,51 @@ const profiles: Profile[] = [
     icon: Users,
     testimonials: [
       {
+        name: "Patrick M.",
+        avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+        location: "Paris → Kinshasa",
         avant: "Je suis arrivé à Kinshasa sans personne pour m'orienter.",
         difficulte: "Transport, démarches confuses.",
         avecBridge:
           "Prise en charge dès l'aéroport, chauffeur et accompagnement administratif.",
       },
       {
+        name: "Marie-Claire K.",
+        avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+        location: "Bruxelles → Kinshasa",
         avant: "Mes colis mettaient des semaines à arriver.",
         difficulte: "Perte de temps et d'argent.",
         avecBridge: "Réception sécurisée et suivi organisé.",
       },
       {
+        name: "Jean-Pierre L.",
+        avatar: "https://randomuser.me/api/portraits/men/67.jpg",
+        location: "Lyon → Lubumbashi",
         avant:
           "Je voulais ouvrir un compte mais je ne savais pas par où commencer.",
         difficulte: "Manque d'informations fiables.",
         avecBridge: "Orientation bancaire et mise en relation rapide.",
       },
       {
+        name: "Sandrine N.",
+        avatar: "https://randomuser.me/api/portraits/women/28.jpg",
+        location: "Londres → Kinshasa",
         avant: "Chaque retour au pays était stressant.",
         difficulte: "Logistique imprévisible.",
         avecBridge: "Organisation complète avant l'arrivée.",
       },
       {
+        name: "Christian B.",
+        avatar: "https://randomuser.me/api/portraits/men/45.jpg",
+        location: "Genève → Goma",
         avant: "Je voulais investir mais je craignais les risques.",
         difficulte: "Manque de structure.",
         avecBridge: "Accompagnement sécurisé et partenaires vérifiés.",
       },
       {
+        name: "Françoise M.",
+        avatar: "https://randomuser.me/api/portraits/women/63.jpg",
+        location: "Montréal → Kinshasa",
         avant: "Je me sentais seul dans mes démarches.",
         difficulte: "Absence de réseau.",
         avecBridge: "Accès à une communauté et à des guichets locaux.",
@@ -72,31 +94,49 @@ const profiles: Profile[] = [
     icon: Briefcase,
     testimonials: [
       {
+        name: "Thomas R.",
+        avatar: "https://randomuser.me/api/portraits/men/22.jpg",
+        location: "Expatrié - Kinshasa",
         avant: "Trouver un logement adapté était compliqué.",
         difficulte: "Manque de contacts fiables.",
         avecBridge: "Orientation logement et installation accompagnée.",
       },
       {
+        name: "Sarah W.",
+        avatar: "https://randomuser.me/api/portraits/women/33.jpg",
+        location: "Expatriée - Lubumbashi",
         avant: "Je ne comprenais pas les procédures locales.",
         difficulte: "Complexité administrative.",
         avecBridge: "Assistance et explications claires.",
       },
       {
+        name: "Michael D.",
+        avatar: "https://randomuser.me/api/portraits/men/55.jpg",
+        location: "Expatrié - Goma",
         avant: "Je n'avais pas de réseau professionnel.",
         difficulte: "Isolement.",
         avecBridge: "Mise en relation stratégique.",
       },
       {
+        name: "Emma L.",
+        avatar: "https://randomuser.me/api/portraits/women/17.jpg",
+        location: "Expatriée - Kinshasa",
         avant: "Je craignais pour ma sécurité.",
         difficulte: "Méconnaissance du terrain.",
         avecBridge: "Services encadrés et fiables.",
       },
       {
+        name: "David K.",
+        avatar: "https://randomuser.me/api/portraits/men/36.jpg",
+        location: "Expatrié - Matadi",
         avant: "Mon arrivée a été improvisée.",
         difficulte: "Perte de temps.",
         avecBridge: "Plan d'arrivée structuré.",
       },
       {
+        name: "Julie P.",
+        avatar: "https://randomuser.me/api/portraits/women/52.jpg",
+        location: "Expatriée - Kinshasa",
         avant: "Je voulais investir localement.",
         difficulte: "Manque d'accompagnement.",
         avecBridge: "Conseil et partenaires validés.",
@@ -109,31 +149,49 @@ const profiles: Profile[] = [
     icon: TrendingUp,
     testimonials: [
       {
+        name: "Bernard T.",
+        avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+        location: "Investisseur - Immobilier",
         avant: "Mon premier projet n'a pas abouti.",
         difficulte: "Mauvais interlocuteurs.",
         avecBridge: "Sélection de partenaires fiables.",
       },
       {
+        name: "Nathalie S.",
+        avatar: "https://randomuser.me/api/portraits/women/39.jpg",
+        location: "Investisseuse - Commerce",
         avant: "Je ne comprenais pas les procédures financières.",
         difficulte: "Risque juridique.",
         avecBridge: "Structuration et orientation bancaire.",
       },
       {
+        name: "Philippe A.",
+        avatar: "https://randomuser.me/api/portraits/men/59.jpg",
+        location: "Investisseur - Agriculture",
         avant: "Impossible d'obtenir un financement.",
         difficulte: "Dossier incomplet.",
         avecBridge: "Accompagnement montage dossier.",
       },
       {
+        name: "Céline M.",
+        avatar: "https://randomuser.me/api/portraits/women/48.jpg",
+        location: "Investisseuse - Tech",
         avant: "Je manquais d'informations fiables.",
         difficulte: "Décision retardée.",
         avecBridge: "Étude et mise en relation.",
       },
       {
+        name: "Jacques D.",
+        avatar: "https://randomuser.me/api/portraits/men/62.jpg",
+        location: "Investisseur - Tourisme",
         avant: "Je craignais les pertes.",
         difficulte: "Absence de cadre sécurisé.",
         avecBridge: "Sécurisation des étapes.",
       },
       {
+        name: "Isabelle F.",
+        avatar: "https://randomuser.me/api/portraits/women/56.jpg",
+        location: "Investisseuse - Services",
         avant: "Je travaillais seul.",
         difficulte: "Pas de relais local.",
         avecBridge: "Représentation et suivi terrain.",
@@ -146,31 +204,49 @@ const profiles: Profile[] = [
     icon: Heart,
     testimonials: [
       {
+        name: "Georges N.",
+        avatar: "https://randomuser.me/api/portraits/men/71.jpg",
+        location: "Retraité - Kinshasa",
         avant: "Revenir au pays me faisait peur.",
         difficulte: "Organisation floue.",
         avecBridge: "Installation clé en main.",
       },
       {
+        name: "Madeleine K.",
+        avatar: "https://randomuser.me/api/portraits/women/68.jpg",
+        location: "Retraitée - Lubumbashi",
         avant: "Je ne savais pas comment organiser mon suivi médical.",
         difficulte: "Incertitude santé.",
         avecBridge: "Orientation santé et partenaires fiables.",
       },
       {
+        name: "Albert M.",
+        avatar: "https://randomuser.me/api/portraits/men/74.jpg",
+        location: "Retraité - Goma",
         avant: "Les démarches administratives étaient compliquées.",
         difficulte: "Temps et énergie perdus.",
         avecBridge: "Assistance personnalisée.",
       },
       {
+        name: "Thérèse B.",
+        avatar: "https://randomuser.me/api/portraits/women/72.jpg",
+        location: "Retraitée - Kinshasa",
         avant: "Je cherchais un cadre de vie stable.",
         difficulte: "Manque de conseils.",
         avecBridge: "Accompagnement logement.",
       },
       {
+        name: "Raymond L.",
+        avatar: "https://randomuser.me/api/portraits/men/68.jpg",
+        location: "Retraité - Matadi",
         avant: "Je voulais investir pour mes enfants.",
         difficulte: "Manque d'orientation.",
         avecBridge: "Conseil patrimonial structuré.",
       },
       {
+        name: "Jeanne P.",
+        avatar: "https://randomuser.me/api/portraits/women/76.jpg",
+        location: "Retraitée - Kinshasa",
         avant: "Je voulais revenir sereinement.",
         difficulte: "Incertitude globale.",
         avecBridge: "Parcours organisé étape par étape.",
@@ -183,6 +259,22 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
   return (
     <Card className="min-w-[300px] max-w-[350px] shrink-0 border-0 bg-white shadow-lg">
       <CardContent className="space-y-4 p-6">
+        {/* Avatar et infos */}
+        <div className="flex items-center gap-3 border-b border-gray-100 pb-4">
+          <div className="relative size-12 overflow-hidden rounded-full">
+            <Image
+              src={testimonial.avatar}
+              alt={testimonial.name}
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div>
+            <p className="font-semibold text-[#454F80]">{testimonial.name}</p>
+            <p className="text-xs text-[#454F80]/60">{testimonial.location}</p>
+          </div>
+        </div>
+
         <div>
           <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-[#EF4F67]">
             Avant
