@@ -59,16 +59,27 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen">
-      <section className="bg-secondary py-20">
-        <div className="container mx-auto max-w-7xl px-6">
-          <div className="text-center">
-            <h1 className="mb-4 text-5xl font-black text-primary-foreground">
-              Contactez-nous
-            </h1>
-            <p className="text-primary-foreground/90 mx-auto max-w-2xl text-lg">
-              Notre équipe est à votre écoute pour répondre à toutes vos
-              questions et vous accompagner dans votre projet.
-            </p>
+      <section className="relative bg-secondary py-28 text-white md:py-36">
+        <div className="container mx-auto max-w-5xl px-6 text-center">
+          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary">
+            Parlons de votre projet
+          </p>
+          <h1 className="mb-6 font-[batangas] text-5xl font-bold md:text-7xl">
+            Contactez-<span className="text-primary">nous</span>
+          </h1>
+          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-white/70">
+            Notre équipe est à votre écoute pour répondre à toutes vos questions
+            et vous accompagner dans votre projet.
+          </p>
+          <div className="mx-auto mt-10 flex max-w-md items-center gap-4">
+            <div className="h-px flex-1 bg-white/10" />
+            <div className="flex gap-6 text-sm text-white/50">
+              <span className="flex items-center gap-2">
+                <span className="size-2 rounded-full bg-green-400" />
+                Réponse sous 24h
+              </span>
+            </div>
+            <div className="h-px flex-1 bg-white/10" />
           </div>
         </div>
       </section>

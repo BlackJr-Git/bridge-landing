@@ -104,11 +104,7 @@ const services = [
       "Profitez pleinement de votre séjour avec nos services de conciergerie et d'expériences locales.",
     icon: Sparkles,
     image: "/community_events.jpg",
-    features: [
-      "Restauration",
-      "Conciergerie",
-      "Expériences locales",
-    ],
+    features: ["Restauration", "Conciergerie", "Expériences locales"],
   },
   {
     id: "retraite",
@@ -130,20 +126,37 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative bg-secondary py-24 text-white md:py-32">
-        <div className="container relative mx-auto max-w-5xl px-6 text-center">
-          <h1 className="mb-6 font-[batangas] text-5xl font-bold md:text-7xl lg:text-8xl">
-            <span className="text-primary">Services</span>
-          </h1>
-          <div className="mx-auto flex max-w-lg items-center gap-4 text-sm text-white/60">
-            <span>2024</span>
-            <div className="h-px flex-1 bg-white/20" />
-            <span>2025</span>
+      <section className="relative bg-secondary py-28 text-white md:py-36">
+        <div className="container relative mx-auto max-w-6xl px-6">
+          <div className="text-center">
+            <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary">
+              Ce que nous faisons
+            </p>
+            <h1 className="mb-8 font-[batangas] text-5xl font-bold md:text-7xl lg:text-8xl">
+              Nos <span className="text-primary">Services</span>
+            </h1>
+            <p className="mx-auto max-w-2xl text-lg leading-relaxed text-white/70 md:text-xl">
+              Une gamme complète de services pensés pour vous accompagner à
+              chaque étape. Qualité, fiabilité et résultats.
+            </p>
           </div>
-          <p className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-white/80 md:text-xl">
-            Une gamme complète de services pensés pour vous accompagner à chaque
-            étape. Avec un focus sur la qualité, la fiabilité et vos résultats.
-          </p>
+
+          {/* Quick nav */}
+          <div className="mx-auto mt-14 flex max-w-4xl flex-wrap justify-center gap-3">
+            {services.map((service) => {
+              const Icon = service.icon;
+              return (
+                <a
+                  key={service.id}
+                  href={`#${service.id}`}
+                  className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80 transition-all hover:border-primary/50 hover:bg-primary/10 hover:text-white"
+                >
+                  <Icon className="size-4" />
+                  {service.title}
+                </a>
+              );
+            })}
+          </div>
         </div>
       </section>
 
@@ -163,7 +176,7 @@ export default function ServicesPage() {
                 <div
                   className={cn(
                     "grid items-center gap-12 md:grid-cols-2 md:gap-16",
-                    isReversed && "md:[&>*:first-child]:order-2"
+                    isReversed && "md:[&>*:first-child]:order-2",
                   )}
                 >
                   {/* Content */}
@@ -192,14 +205,14 @@ export default function ServicesPage() {
                             className={cn(
                               "size-1.5 rounded-full bg-[#454F80]/40",
                               service.highlight === feature &&
-                                "size-2 bg-[#EF4F67]"
+                                "size-2 bg-[#EF4F67]",
                             )}
                           />
                           <span
                             className={cn(
                               "text-sm",
                               service.highlight === feature &&
-                                "font-semibold text-[#EF4F67]"
+                                "font-semibold text-[#EF4F67]",
                             )}
                           >
                             {feature}
@@ -235,9 +248,7 @@ export default function ServicesPage() {
                     <div
                       className={cn(
                         "absolute -z-10 size-32 rounded-2xl bg-[#EF4F67]/10",
-                        isReversed
-                          ? "-bottom-4 -left-4"
-                          : "-bottom-4 -right-4"
+                        isReversed ? "-bottom-4 -left-4" : "-bottom-4 -right-4",
                       )}
                     />
                   </div>
