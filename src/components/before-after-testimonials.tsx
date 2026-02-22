@@ -295,8 +295,8 @@ export default function BeforeAfterTestimonials() {
     <section className="bg-slate-50 py-16 md:py-24">
       <div className="container mx-auto px-6">
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-4xl font-bold text-[#454F80]">
-            Ils ont vécu ça… <span className="text-[#EF4F67]">puis Bridge</span>
+          <h2 className="mb-4 text-4xl font-bold">
+            Ils ont vécu ça… <span className="text-primary">puis Bridge</span>
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-[#454F80]/70">
             Découvrez comment Bridge a transformé l'expérience de nos membres

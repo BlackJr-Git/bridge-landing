@@ -67,7 +67,10 @@ export default function ClubBridgeSection() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-16 text-center">
           <div className="mb-4 flex items-center justify-center gap-2">
-            <h2 className="text-4xl font-black">Bridge Club</h2>
+            <h2 className="text-4xl font-black">
+              <span className="font-[batangas] text-primary">Bridge</span>
+              <span className="font-secondary text-secondary">{" "}Club</span>
+            </h2>
           </div>
           <p className="text-muted-foreground mx-auto mb-8 max-w-2xl text-lg">
             Communauté exclusive avec événements mensuels, networking diaspora
