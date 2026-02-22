@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/combobox";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import Link from "next/link";
+import { HeroHeader } from "@/components/header";
 
 const profiles = [
   { value: "diaspora", label: "Diaspora" },

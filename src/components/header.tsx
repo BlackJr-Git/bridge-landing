@@ -7,9 +7,9 @@ import React from "react";
 import { cn } from "@/lib/utils";
 
 const menuItems = [
-  { name: "Nos Services", href: "/services" },
-  // { name: 'Solution', href: '#link' },
+  { name: "Accueil", href: "/" },
   { name: "A Propos", href: "/a-propos" },
+  { name: "Nos Services", href: "/services" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -28,7 +28,7 @@ export const HeroHeader = () => {
     <header>
       <nav
         data-state={menuState && "active"}
-        className="fixed z-20 w-full px-2"
+        className="fixed z-20 w-full px-2 bg-white"
       >
         <div
           className={cn(

@@ -50,7 +50,7 @@ export default function ClubBridgeSection() {
       icon: Sparkles,
       title: "Soirées communauté",
       description: "Événements conviviaux pour tisser des liens durables",
-      image: "/community_events.jpg",
+      image: "/ce.png",
     },
   ];
 
@@ -69,7 +69,7 @@ export default function ClubBridgeSection() {
           <div className="mb-4 flex items-center justify-center gap-2">
             <h2 className="text-4xl font-black">
               <span className="font-[batangas] text-primary">Bridge</span>
-              <span className="font-secondary text-secondary">{" "}Club</span>
+              <span className="font-secondary text-secondary"> Club</span>
             </h2>
           </div>
           <p className="text-muted-foreground mx-auto mb-8 max-w-2xl text-lg">
