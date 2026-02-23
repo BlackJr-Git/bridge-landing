@@ -41,6 +41,7 @@ const services = [
     image: "/fin_advices.jpg",
     features: [
       "Ouverture compte bancaire",
+      "Crédit & Investissement",
       "Orientation solutions financières",
       "Assistance transfert d'argent",
       "Conseils assurance santé",
@@ -73,7 +74,7 @@ const services = [
     description:
       "Votre santé est notre priorité. Accédez à un réseau médical fiable et à une assistance complète.",
     icon: HeartPulse,
-    image: "/assistance_img.jpg",
+    image: "/health-insurance.png",
     features: [
       "Orientation médicale",
       "Accès pharmacie",
@@ -104,7 +105,7 @@ const services = [
     description:
       "Profitez pleinement de votre séjour avec nos services de conciergerie et d'expériences locales.",
     icon: Sparkles,
-    image: "/community_events.jpg",
+    image: "/lifestyle.png",
     features: ["Restauration", "Conciergerie", "Expériences locales"],
   },
   {
@@ -114,7 +115,7 @@ const services = [
     description:
       "Préparez sereinement votre retour et votre installation durable au pays.",
     icon: Clock,
-    image: "/ground_visit.jpg",
+    image: "/retraite.png",
     features: [
       "Préparation retraite RDC",
       "Installation longue durée",

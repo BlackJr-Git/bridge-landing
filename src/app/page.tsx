@@ -12,11 +12,11 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
+      <ServiceSignatureSection />
       <PositioningSection />
       {/* <SolutionsSection /> */}
       <BeforeAfterTestimonials />
       <PremiumServicesSection />
-      <ServiceSignatureSection />
       <ClubBridgeSection />
       <InvestmentEventSection />
       <ContactSection />

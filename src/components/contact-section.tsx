@@ -20,6 +20,7 @@ const profiles = [
   { value: "diaspora", label: "Diaspora" },
   { value: "expat", label: "Expat" },
   { value: "investisseur", label: "Investisseur" },
+  { value: "nextgen", label: "NextGen (18-26 ans)" },
   { value: "retraite", label: "Retraité" },
   { value: "autre", label: "Autre" },
 ];
@@ -34,7 +35,8 @@ export default function ContactSection() {
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-4xl font-black">Prêt à franchir le pas ?</h2>
           <p className="text-slate-400">
-            Laissez-nous vos coordonnées, un conseiller Bridge vous recontactera sous 24h.
+            Laissez-nous vos coordonnées, un conseiller Bridge vous recontactera
+            sous 24h.
           </p>
         </div>
 

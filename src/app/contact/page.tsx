@@ -23,6 +23,7 @@ const profiles = [
   { value: "diaspora", label: "Diaspora" },
   { value: "expat", label: "Expat" },
   { value: "investisseur", label: "Investisseur" },
+  { value: "nextgen", label: "NextGen (18-26 ans)" },
   { value: "retraite", label: "Retraité" },
   { value: "autre", label: "Autre" },
 ];
