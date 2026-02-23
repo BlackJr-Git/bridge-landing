@@ -56,7 +56,7 @@ const services = [
   {
     id: "renaissance",
     title: "Bridge Renaissance",
-    image: "/relocation_ast.jpg",
+    image: "/retraite.png",
     features: [
       "Installation accompagnée",
       "Parcours santé & conseil",

@@ -20,7 +20,7 @@ export default function ClubBridgeSection() {
       icon: Users,
       title: "Networking privé",
       description: "Rencontres exclusives entre membres de la communauté",
-      image: "/net_events.jpg",
+      image: "/private_network.png",
     },
     {
       icon: MessageSquare,
