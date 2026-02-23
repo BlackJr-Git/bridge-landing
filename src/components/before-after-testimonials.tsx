@@ -391,7 +391,7 @@ export default function BeforeAfterTestimonials() {
             Ils ont vécu ça… <span className="text-primary">puis Bridge</span>
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-[#454F80]/70">
-            Découvrez comment Bridge a transformé l'expérience de nos membres
+            Découvrez comment Bridge a transformé la vie de nos membres
           </p>
         </div>
 

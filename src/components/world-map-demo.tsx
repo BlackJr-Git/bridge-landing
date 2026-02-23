@@ -56,7 +56,7 @@ export default function WorldMapDemo() {
           },
           {
             start: { lat: 28.6139, lng: 77.209 }, // New Delhi
-            end: { lat: -1.2921, lng: 36.8219 }, // Nairobi
+            end:  { lat: -13.3424, lng: 15.3039 }, // Nairobi
           },
         ]}
       />

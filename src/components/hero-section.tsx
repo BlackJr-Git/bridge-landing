@@ -113,7 +113,7 @@ export default function HeroSection() {
                   preset="fade-in-blur"
                   speedSegment={0.3}
                   as="h1"
-                  className="font-[batangas] mx-auto mt-8 max-w-4xl text-balance text-5xl max-md:font-semibold md:text-7xl lg:mt-16 xl:text-[5.25rem]"
+                  className="font-[batangas] text-primary mx-auto mt-8 max-w-4xl text-balance text-5xl max-md:font-semibold md:text-7xl lg:mt-16 xl:text-[5.25rem]"
                 >
                   Bridge
                 </TextEffect>
@@ -122,7 +122,7 @@ export default function HeroSection() {
                   preset="fade-in-blur"
                   speedSegment={0.3}
                   as="h2"
-                  className="mx-auto mt-8 max-w-4xl text-balance text-5xl max-md:font-semibold md:text-7xl lg:mt-16 xl:text-[5.25rem]"
+                  className="mx-auto mt-8 max-w-4xl text-balance text-3xl max-md:font-semibold md:text-7xl lg:mt-16 xl:text-[4.25rem]"
                 >
                   Le Guichet Diaspora &amp; Expat
                 </TextEffect>
@@ -236,7 +236,7 @@ export default function HeroSection() {
                   className="rounded-sm"
                 />
                 <span className="text-sm font-medium md:text-base">
-                  RDC — Hub principal
+                  RDC Hub principal
                 </span>
               </div>
 

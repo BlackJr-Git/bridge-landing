@@ -18,7 +18,7 @@ export default function InvestmentEventSection() {
           </div>
           <div>
             <Button
-              variant="outline"
+              // variant="outline"
               type="button"
               className="rounded-lg py-2 font-bold w-fit"
             >
@@ -36,7 +36,7 @@ export default function InvestmentEventSection() {
               </span>
             </div>
             <h3 className="mb-4 text-3xl font-black">
-              NGUNDA — La Foire Diaspora &amp; Expat
+              NGUNDA <br /> La Foire Diaspora &amp; Expat
             </h3>
             <p className="mb-6 font-medium opacity-90">
               Le plus grand rassemblement annuel pour les futurs acteurs du

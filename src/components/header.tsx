@@ -8,8 +8,8 @@ import { cn } from "@/lib/utils";
 
 const menuItems = [
   { name: "Accueil", href: "/" },
-  { name: "A Propos", href: "/a-propos" },
-  { name: "Nos Services", href: "/services" },
+  { name: "A propos", href: "/a-propos" },
+  { name: "Nos services", href: "/services" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -103,7 +103,7 @@ export const HeroHeader = () => {
                   //   size=""
                   className={cn(isScrolled && "lg:hidden")}
                 >
-                  <Link href="#">
+                  <Link href="/contact">
                     <span>Contactez-nous</span>
                   </Link>
                 </Button>
@@ -112,7 +112,7 @@ export const HeroHeader = () => {
                   //   size="sm"
                   className={cn(isScrolled ? "lg:inline-flex" : "hidden")}
                 >
-                  <Link href="#">
+                  <Link href="/contact">
                     <span>Contactez-nous</span>
                   </Link>
                 </Button>
