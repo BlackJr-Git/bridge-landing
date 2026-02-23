@@ -183,16 +183,16 @@ export default function ServicesPage() {
                   {/* Content */}
                   <div>
                     <div className="mb-6 flex items-center gap-4">
-                      <span className="text-5xl font-bold text-gray-100 md:text-6xl">
+                      <span className="text-5xl font-bold text-primary/60 md:text-6xl">
                         {service.number}
                       </span>
                     </div>
 
-                    <h2 className="mb-4 text-3xl font-bold text-[#454F80] md:text-4xl">
+                    <h2 className="mb-4 text-3xl font-bold text-secondary md:text-4xl">
                       {service.title}
                     </h2>
 
-                    <p className="mb-8 text-[#454F80]/70">
+                    <p className="mb-8 text-secondary/80">
                       {service.description}
                     </p>
 

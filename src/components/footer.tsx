@@ -101,7 +101,7 @@ export default function Footer() {
           <div className="col-span-2">
             <span className="font-medium">À propos</span>
             <p className="text-muted-foreground mt-4 max-w-sm text-sm leading-relaxed">
-              Le premier guichet unique digital pour la diaspora et les
+              Le premier guichet pour la diaspora et les
               expatriés en République Démocratique du Congo. Nous transformons
               votre ambition en réalité.
             </p>
