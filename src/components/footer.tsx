@@ -4,7 +4,7 @@ import { MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-import { Logo } from "@/components/logo";
+import { Logo, LogoIcon } from "@/components/logo";
 
 const quickLinks = [
   { href: "#services", label: "Nos Services" },
@@ -30,9 +30,12 @@ export default function Footer() {
   return (
     <footer className="m-1 rounded-3xl border">
       <div className="mx-auto container space-y-16 px-5 py-16">
-        <div className="flex justify-center border-b pb-8">
-          <Link href="/" aria-label="go home">
-            <Logo className="" />
+        <div className="flex justify-center border-b">
+          <Link href="/" aria-label="go home" className="flex items-center">
+            <LogoIcon className="w-32 h-32" />
+            <span className="font-[batangas] text-2xl text-primary">
+              Bridge
+            </span>
           </Link>
         </div>
         <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">

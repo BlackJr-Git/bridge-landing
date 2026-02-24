@@ -122,7 +122,7 @@ export default function HeroSection() {
                   preset="fade-in-blur"
                   speedSegment={0.3}
                   as="h2"
-                  className="mx-auto mt-8 max-w-4xl text-balance text-3xl max-md:font-semibold md:text-7xl lg:mt-16 xl:text-[4.25rem]"
+                  className="mx-auto mt-8 max-w-4xl text-balance text-3xl max-md:font-semibold md:text-4xl lg:mt-16 xl:text-[3.25rem]"
                 >
                   Le Guichet Diaspora &amp; Expat
                 </TextEffect>
