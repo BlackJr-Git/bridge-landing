@@ -111,7 +111,7 @@ const services = [
   {
     id: "retraite",
     number: "07",
-    title: "Retraite & Installation longue durée",
+    title: "Bridge NextGen",
     description:
       "Préparez sereinement votre retour et votre installation durable au pays.",
     icon: Clock,

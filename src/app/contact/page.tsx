@@ -28,9 +28,21 @@ const profiles = [
   { value: "autre", label: "Autre" },
 ];
 
+const services = [
+  { value: "installation", label: "Installation & Vie" },
+  { value: "banque", label: "Banque & Assurance" },
+  { value: "mobilite", label: "Mobilité & Voyage" },
+  { value: "sante", label: "Santé & Assistance" },
+  { value: "business", label: "Business & Investissement" },
+  { value: "lifestyle", label: "Lifestyle & Conciergerie" },
+  { value: "nextgen", label: "Bridge NextGen" },
+];
+
 export default function ContactPage() {
   const [selectedProfiles, setSelectedProfiles] = React.useState<string[]>([]);
+  const [selectedServices, setSelectedServices] = React.useState<string[]>([]);
   const anchor = useComboboxAnchor();
+  const servicesAnchor = useComboboxAnchor();
 
   const contactInfo = [
     {
@@ -40,6 +52,7 @@ export default function ContactPage() {
         "Kinshasa, RDC — Hub principal",
         "Paris, France",
         "Bruxelles, Belgique",
+        "Pretoria, Afrique du Sud",
       ],
     },
     {
@@ -212,7 +225,44 @@ export default function ContactPage() {
                           </ComboboxItem>
                         ))}
                       </ComboboxList>
-                      <ComboboxEmpty>Aucun profil trouvé</ComboboxEmpty>
+                    </ComboboxContent>
+                  </Combobox>
+                </div>
+
+                <div className="space-y-2">
+                  <Label className="ml-1 text-slate-400">
+                    Services qui vous intéressent
+                  </Label>
+                  <Combobox
+                    value={selectedServices}
+                    onValueChange={setSelectedServices}
+                    multiple
+                  >
+                    <ComboboxChips
+                      ref={servicesAnchor}
+                      className="min-h-14 rounded-xl"
+                    >
+                      {selectedServices.map((value) => {
+                        const service = services.find((s) => s.value === value);
+                        return (
+                          <ComboboxChip key={value}>
+                            {service?.label}
+                          </ComboboxChip>
+                        );
+                      })}
+                      <ComboboxChipsInput placeholder="Sélectionnez les services" />
+                    </ComboboxChips>
+                    <ComboboxContent anchor={servicesAnchor}>
+                      <ComboboxList>
+                        {services.map((service) => (
+                          <ComboboxItem
+                            key={service.value}
+                            value={service.value}
+                          >
+                            {service.label}
+                          </ComboboxItem>
+                        ))}
+                      </ComboboxList>
                     </ComboboxContent>
                   </Combobox>
                 </div>

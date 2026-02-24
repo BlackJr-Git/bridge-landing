@@ -38,7 +38,7 @@ export default function ClubBridgeSection() {
       icon: GraduationCap,
       title: "Coaching installation",
       description: "Accompagnement personnalisé pour votre installation",
-      image: "/relocation_ast.jpg",
+      image: "/installation.png",
     },
     {
       icon: TrendingUp,

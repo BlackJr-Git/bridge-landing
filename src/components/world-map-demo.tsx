@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function WorldMapDemo() {
   return (
-    <div className="w-full bg-white dark:bg-black">
+    <div className=" bg-white dark:bg-black">
       {/* <div className="max-w-7xl mx-auto text-center">
         <p className="font-bold text-xl md:text-4xl dark:text-white text-black">
           Remote{" "}
@@ -36,19 +36,19 @@ export default function WorldMapDemo() {
               lat: 40.2008,
               lng: -100.4937,
             }, // Alaska (Fairbanks)
-            end: { lat: -17.3424, lng: 20.3039 }, // Kinshasa 
+            end: { lat: -17.3424, lng: 20.3039 }, // Kinshasa
           },
           {
-            start: { lat: -17.3424, lng: 20.3039 }, // Kinshasa  
+            start: { lat: -17.3424, lng: 20.3039 }, // Kinshasa
             end: { lat: -44.7566, lng: 23.1814 }, // Pretoria
           },
           {
             start: { lat: -23.7975, lng: -47.8919 }, // Brazil (Brasília)
-            end: { lat: -17.3424, lng: 20.3039 }, // Kinshasa 
+            end: { lat: -17.3424, lng: 20.3039 }, // Kinshasa
           },
           {
             start: { lat: 38.8566, lng: 2.3522 }, // Paris
-            end: { lat: -17.3424, lng: 20.3039 }, // Kinshasa 
+            end: { lat: -17.3424, lng: 20.3039 }, // Kinshasa
           },
           {
             start: { lat: 28.6139, lng: 77.209 }, // New Delhi
@@ -56,7 +56,7 @@ export default function WorldMapDemo() {
           },
           {
             start: { lat: 28.6139, lng: 77.209 }, // New Delhi
-            end:  { lat: -17.3424, lng: 20.3039 }, // Kinshasa 
+            end: { lat: -17.3424, lng: 20.3039 }, // Kinshasa
           },
         ]}
       />

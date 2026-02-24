@@ -101,7 +101,7 @@ export default function PremiumServicesSection() {
             className={`${baseCardClassName} ${hoverCardClassName} ${borderClassName} ${highlightClassName} flex flex-col items-center p-6 text-center`}
           >
             <Sparkles className="text-primary mb-4 size-8" />
-            <h3 className="text-sm font-bold">Lifestyle</h3>
+            <h3 className="text-sm font-bold">NextGen</h3>
           </div>
 
           <div
