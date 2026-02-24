@@ -36,19 +36,19 @@ export default function WorldMapDemo() {
               lat: 40.2008,
               lng: -100.4937,
             }, // Alaska (Fairbanks)
-            end: { lat: -13.3424, lng: 15.3039 }, // Los Angeles
+            end: { lat: -17.3424, lng: 20.3039 }, // Kinshasa 
           },
           {
-            start: { lat: -13.3424, lng: 15.3039 }, // Kinshasa  
+            start: { lat: -17.3424, lng: 20.3039 }, // Kinshasa  
             end: { lat: -44.7566, lng: 23.1814 }, // Pretoria
           },
           {
             start: { lat: -23.7975, lng: -47.8919 }, // Brazil (Brasília)
-            end: { lat: -13.3424, lng: 15.3039 }, // Lisbon
+            end: { lat: -17.3424, lng: 20.3039 }, // Kinshasa 
           },
           {
             start: { lat: 38.8566, lng: 2.3522 }, // Paris
-            end: { lat: -13.3424, lng: 15.3039 }, // Pretoria
+            end: { lat: -17.3424, lng: 20.3039 }, // Kinshasa 
           },
           {
             start: { lat: 28.6139, lng: 77.209 }, // New Delhi
@@ -56,7 +56,7 @@ export default function WorldMapDemo() {
           },
           {
             start: { lat: 28.6139, lng: 77.209 }, // New Delhi
-            end:  { lat: -13.3424, lng: 15.3039 }, // Nairobi
+            end:  { lat: -17.3424, lng: 20.3039 }, // Kinshasa 
           },
         ]}
       />
