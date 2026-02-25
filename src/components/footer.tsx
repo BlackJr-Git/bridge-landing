@@ -31,9 +31,13 @@ export default function Footer() {
     <footer className="m-1 rounded-3xl border">
       <div className="mx-auto container space-y-16 px-5 py-16">
         <div className="flex justify-center border-b">
-          <Link href="/" aria-label="go home" className="flex items-center">
-            <LogoIcon className="w-32 h-32" />
-            <span className="font-[batangas] text-2xl text-primary">
+          <Link
+            href="/"
+            aria-label="go home"
+            className="flex flex-col justify-center items-center"
+          >
+            <LogoIcon className="w-28 h-28" />
+            <span className="font-[batangas] text-3xl text-primary">
               Bridge
             </span>
           </Link>

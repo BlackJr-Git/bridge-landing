@@ -22,7 +22,7 @@ const services = [
     description:
       "Un accompagnement complet pour votre installation et votre adaptation au quotidien.",
     icon: Home,
-    image: "/relocation_ast.jpg",
+    image: "/installation.png",
     features: [
       "Installation administrative",
       "Recherche logement",
