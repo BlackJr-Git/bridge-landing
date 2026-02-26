@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import { MapPin } from "lucide-react";
@@ -5,28 +7,28 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Logo, LogoIcon } from "@/components/logo";
-
-const quickLinks = [
-  { href: "#services", label: "Nos Services" },
-  { href: "#club", label: "Le Club Bridge" },
-  // { href: "#", label: "Blog & Guides" },
-  // { href: "#", label: "Espace Presse" },
-];
-
-const offices = [
-  { location: "République Démocratique du Congo" },
-  { location: "France" },
-  { location: "Belgique" },
-  { location: "Afrique du Sud" },
-];
-
-const legalLinks = [
-  { href: "#", label: "Mentions Légales" },
-  { href: "#", label: "Confidentialité" },
-  { href: "#", label: "CGU" },
-];
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
+  const quickLinks = [
+    { href: "#services", label: t("footer.ourServices") },
+    { href: "#club", label: t("footer.theClub") },
+  ];
+
+  const offices = [
+    { location: t("hero.drcHub") },
+    { location: t("hero.france") },
+    { location: t("hero.belgium") },
+    { location: t("hero.southAfrica") },
+  ];
+
+  const legalLinks = [
+    { href: "#", label: t("footer.legal") },
+    { href: "#", label: t("footer.privacy") },
+    { href: "#", label: t("footer.terms") },
+  ];
   return (
     <footer className="m-1 rounded-3xl border">
       <div className="mx-auto container space-y-16 px-5 py-16">
@@ -44,11 +46,9 @@ export default function Footer() {
         </div>
         <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
           <div className="col-span-2">
-            <span className="font-medium">À propos</span>
+            <span className="font-medium">{t("footer.about")}</span>
             <p className="text-muted-foreground mt-4 max-w-sm text-sm leading-relaxed">
-              Le premier guichet pour la diaspora et les expatriés en République
-              Démocratique du Congo. Nous transformons votre ambition en
-              réalité.
+              {t("footer.aboutText")}
             </p>
             <div className="mt-6 flex gap-3">
               <Link
@@ -134,7 +134,7 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <span className="font-medium">Liens Rapides</span>
+            <span className="font-medium">{t("footer.quickLinks")}</span>
             <ul className="mt-4 list-inside space-y-4">
               {quickLinks.map((link, index) => (
                 <li key={index}>
@@ -149,7 +149,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <span className="text-sm font-medium">Bureaux</span>
+            <span className="text-sm font-medium">{t("footer.offices")}</span>
             <ul className="mt-4 list-inside space-y-4">
               {offices.map((office, index) => (
                 <li
@@ -165,11 +165,11 @@ export default function Footer() {
             <form className="mt-12 w-full max-w-xs">
               <div className="space-y-2.5">
                 <Label className="block text-sm font-medium" htmlFor="email">
-                  Abonnez-vous à notre newsletter
+                  {t("footer.newsletter")}
                 </Label>
                 <Input
                   className="input variant-mixed sz-md"
-                  placeholder="Votre email"
+                  placeholder={t("footer.emailPlaceholder")}
                   type="email"
                   id="email"
                   required
@@ -177,7 +177,7 @@ export default function Footer() {
                 />
               </div>
               <Button type="submit" className="mt-3">
-                <span>S'abonner</span>
+                <span>{t("footer.subscribe")}</span>
               </Button>
             </form>
           </div>
@@ -185,8 +185,7 @@ export default function Footer() {
         <div className="bg-muted mt-16 flex items-center justify-between rounded-md p-4 px-6 py-3">
           <span>
             {" "}
-            © {new Date().getFullYear()} BRIDGE Digital Platform. Tous droits
-            réservés.
+            {t("footer.copyright", { year: new Date().getFullYear() })}
           </span>
           <div className="flex gap-4">
             {legalLinks.map((link, index) => (

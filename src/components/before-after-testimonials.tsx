@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "react-i18next";
 
 type Testimonial = {
   name: string;
@@ -256,6 +257,7 @@ const profiles: Profile[] = [
 ];
 
 function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
+  const { t } = useTranslation();
   return (
     <Card className="min-w-[300px] max-w-[350px] shrink-0 border-0 bg-white shadow-lg">
       <CardContent className="space-y-4 p-6">
@@ -277,19 +279,19 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
 
         <div>
           <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-[#EF4F67]">
-            Avant
+            {t("testimonials.before")}
           </p>
           <p className="text-sm italic text-[#454F80]">"{testimonial.avant}"</p>
         </div>
         <div>
           <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-[#454F80]/60">
-            Difficulté
+            {t("testimonials.difficulty")}
           </p>
           <p className="text-sm text-[#454F80]/80">{testimonial.difficulte}</p>
         </div>
         <div className="rounded-lg bg-[#EF4F67]/10 p-3">
           <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-[#EF4F67]">
-            Avec Bridge
+            {t("testimonials.withBridge")}
           </p>
           <p className="text-sm font-medium text-[#454F80]">
             {testimonial.avecBridge}
@@ -380,6 +382,7 @@ function ProfileSlider({ profile }: { profile: Profile }) {
 
 export default function BeforeAfterTestimonials() {
   const [activeProfile, setActiveProfile] = React.useState<string>("diaspora");
+  const { t } = useTranslation();
 
   const currentProfile = profiles.find((p) => p.id === activeProfile);
 
@@ -388,10 +391,13 @@ export default function BeforeAfterTestimonials() {
       <div className="container mx-auto px-6">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-4xl font-bold">
-            Ils ont vécu ça… <span className="text-primary">puis Bridge</span>
+            {t("testimonials.title")}{" "}
+            <span className="text-primary">
+              {t("testimonials.titleHighlight")}
+            </span>
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-[#454F80]/70">
-            Découvrez comment Bridge a transformé la vie de nos membres
+            {t("testimonials.description")}
           </p>
         </div>
 

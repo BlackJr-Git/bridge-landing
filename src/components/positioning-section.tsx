@@ -1,12 +1,16 @@
+"use client";
+
 import React from "react";
 import { Users, Plane, TrendingUp, Heart } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function PositioningSection() {
+  const { t } = useTranslation();
   const profiles = [
-    { icon: Users, label: "Diaspora" },
-    { icon: Plane, label: "Expatriés" },
-    { icon: TrendingUp, label: "Investisseurs" },
-    { icon: Heart, label: "Retraités" },
+    { icon: Users, label: t("positioning.diaspora") },
+    { icon: Plane, label: t("positioning.expats") },
+    { icon: TrendingUp, label: t("positioning.investors") },
+    { icon: Heart, label: t("positioning.retirees") },
   ];
 
   return (
@@ -14,10 +18,10 @@ export default function PositioningSection() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-16 text-center">
           <div className="mb-4 flex items-center justify-center gap-2">
-            <h2 className="text-4xl font-black">Bridge, c'est quoi ?</h2>
+            <h2 className="text-4xl font-black">{t("positioning.title")}</h2>
           </div>
           <p className="text-muted-foreground mx-auto max-w-3xl text-lg">
-            Bridge est le premier guichet d'accompagnement global pour :
+            {t("positioning.description")}
           </p>
         </div>
 
@@ -44,7 +48,7 @@ export default function PositioningSection() {
 
         <div className="bg-primary border-primary/20 rounded-2xl border p-8 text-center">
           <p className="text-xl font-bold text-primary-foreground">
-            Une seule porte d'entrée pour tous vos besoins.
+            {t("positioning.tagline")}
           </p>
         </div>
       </div>

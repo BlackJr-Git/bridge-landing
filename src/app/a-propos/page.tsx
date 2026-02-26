@@ -11,69 +11,54 @@ import {
   Heart,
 } from "lucide-react";
 import CallToAction from "@/components/call-to-action";
-
-const stats = [
-  {
-    value: "50+",
-    label: "Partenaires vérifiés et fiables",
-    icon: Handshake,
-  },
-  {
-    value: "300+",
-    label: "Logements sécurisés",
-    icon: Home,
-  },
-  {
-    value: "1000+",
-    label: "Personnes accompagnées",
-    icon: Users,
-  },
-  {
-    value: "∞",
-    label: "Communauté forte diaspora & locaux",
-    icon: Globe,
-  },
-];
-
-const values = [
-  {
-    icon: Shield,
-    title: "Vous sécuriser",
-    description:
-      "Des partenaires vérifiés, des processus transparents, et un accompagnement de confiance.",
-  },
-  {
-    icon: Target,
-    title: "Vous structurer",
-    description:
-      "Une méthodologie éprouvée pour transformer vos projets en réalisations concrètes.",
-  },
-  {
-    icon: Heart,
-    title: "Vous accompagner",
-    description:
-      "Une présence humaine à chaque étape, de la préparation à l'installation.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export default function AboutPage() {
+  const { t } = useTranslation();
+
+  const stats = [
+    { value: "50+", label: t("aboutPage.stats.partners"), icon: Handshake },
+    { value: "300+", label: t("aboutPage.stats.housing"), icon: Home },
+    { value: "1000+", label: t("aboutPage.stats.people"), icon: Users },
+    { value: "∞", label: t("aboutPage.stats.community"), icon: Globe },
+  ];
+
+  const values = [
+    {
+      icon: Shield,
+      title: t("aboutPage.values.secure.title"),
+      description: t("aboutPage.values.secure.description"),
+    },
+    {
+      icon: Target,
+      title: t("aboutPage.values.structure.title"),
+      description: t("aboutPage.values.structure.description"),
+    },
+    {
+      icon: Heart,
+      title: t("aboutPage.values.support.title"),
+      description: t("aboutPage.values.support.description"),
+    },
+  ];
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-secondary py-28 text-white md:py-36">
         <div className="container mx-auto max-w-5xl px-6 text-center">
           <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary">
-            Notre histoire
+            {t("aboutPage.heroLabel")}
           </p>
           <h1 className="mb-8 font-[batangas] text-5xl font-bold md:text-7xl">
-            À propos de <span className="text-primary">Bridge</span>
+            {t("aboutPage.heroTitle")}{" "}
+            <span className="text-primary">
+              {t("aboutPage.heroTitleHighlight")}
+            </span>
           </h1>
           <p className="mx-auto max-w-3xl text-lg leading-relaxed text-white/70 md:text-xl">
-            Bridge est né d'un constat simple :
+            {t("aboutPage.heroDesc")}
           </p>
           <p className="mx-auto mt-4 max-w-3xl text-2xl font-semibold leading-relaxed md:text-3xl">
-            Revenir, investir ou s'installer au pays ne devrait pas être un
-            parcours d'obstacles.
+            {t("aboutPage.heroStatement")}
           </p>
         </div>
       </section>
@@ -84,48 +69,49 @@ export default function AboutPage() {
           <div className="grid gap-16 md:grid-cols-2 md:items-center">
             <div>
               <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
-                Qui sommes-nous
+                {t("aboutPage.whoWeAre")}
               </p>
               <h2 className="mb-6 text-3xl font-bold text-[#454F80] md:text-4xl">
-                Une double expertise <br />
-                <span className="text-primary">unique</span>
+                {t("aboutPage.dualExpertise")} <br />
+                <span className="text-primary">{t("aboutPage.unique")}</span>
               </h2>
-              <p className="mb-6 text-lg leading-relaxed text-[#454F80]/70">
-                Nous sommes un{" "}
-                <strong className="text-[#454F80]">
-                  regroupement puissant
-                </strong>{" "}
-                de membres de la diaspora et d'acteurs locaux engagés, qui ont
-                décidé de transformer les difficultés en opportunités.
-              </p>
-              <p className="text-lg leading-relaxed text-[#454F80]/70">
-                Parce que nous connaissons{" "}
-                <strong className="text-[#454F80]">les deux réalités</strong> :
-                celle de l'extérieur… et celle du terrain.
-              </p>
+              <p
+                className="mb-6 text-lg leading-relaxed text-[#454F80]/70"
+                dangerouslySetInnerHTML={{
+                  __html: t("aboutPage.whoWeAreDesc1"),
+                }}
+              />
+              <p
+                className="text-lg leading-relaxed text-[#454F80]/70"
+                dangerouslySetInnerHTML={{
+                  __html: t("aboutPage.whoWeAreDesc2"),
+                }}
+              />
             </div>
             <div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="rounded-2xl border border-[#454F80]/10 bg-slate-50 p-6">
                   <Globe className="mb-3 size-8 text-primary" />
                   <p className="text-lg font-bold text-[#454F80]">
-                    L'extérieur
+                    {t("aboutPage.outside")}
                   </p>
                   <p className="mt-1 text-sm text-[#454F80]/60">
-                    La réalité de la diaspora, ses défis et ses ambitions
+                    {t("aboutPage.outsideDesc")}
                   </p>
                 </div>
                 <div className="rounded-2xl border border-[#454F80]/10 bg-slate-50 p-6">
                   <Home className="mb-3 size-8 text-primary" />
-                  <p className="text-lg font-bold text-[#454F80]">Le terrain</p>
+                  <p className="text-lg font-bold text-[#454F80]">
+                    {t("aboutPage.ground")}
+                  </p>
                   <p className="mt-1 text-sm text-[#454F80]/60">
-                    La connaissance locale, les partenaires, le réseau
+                    {t("aboutPage.groundDesc")}
                   </p>
                 </div>
                 <div className="col-span-2 rounded-2xl border border-primary/20 bg-primary/5 p-6">
                   <p className="text-center text-lg font-bold text-[#454F80]">
-                    <span className="text-primary">Bridge</span> = Le pont entre
-                    les deux
+                    <span className="text-primary">Bridge</span>{" "}
+                    {t("aboutPage.bridgeBetween")}
                   </p>
                 </div>
               </div>
@@ -138,10 +124,10 @@ export default function AboutPage() {
       <section className="bg-secondary py-20 text-white md:py-28">
         <div className="container mx-auto max-w-6xl px-6">
           <p className="mb-3 text-center text-sm font-medium uppercase tracking-widest text-primary">
-            Nos chiffres
+            {t("aboutPage.statsLabel")}
           </p>
           <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
-            Aujourd'hui, Bridge c'est :
+            {t("aboutPage.statsTitle")}
           </h2>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -169,10 +155,10 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-6xl px-6">
           <div className="mb-12 text-center">
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
-              Ce qui nous guide
+              {t("aboutPage.missionLabel")}
             </p>
             <h2 className="mb-4 text-3xl font-bold text-[#454F80] md:text-4xl">
-              Notre mission est simple
+              {t("aboutPage.missionTitle")}
             </h2>
           </div>
 

@@ -4,11 +4,12 @@ import React from "react";
 import { MessageCircle } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 export default function WhatsAppButton() {
+  const { t } = useTranslation();
   const whatsappNumber = "243000000000";
-  const message =
-    "Bonjour, je souhaite en savoir plus sur vos services Bridge.";
+  const message = t("whatsapp.message");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
   return (
@@ -17,7 +18,7 @@ export default function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 flex size-18 items-center justify-center rounded-full shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl"
-      aria-label="Contactez-nous sur WhatsApp"
+      aria-label={t("whatsapp.ariaLabel")}
     >
       <Image
         src="/icons-whatsapp.gif"

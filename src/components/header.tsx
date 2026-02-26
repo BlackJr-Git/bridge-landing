@@ -5,17 +5,20 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import React from "react";
 import { cn } from "@/lib/utils";
-
-const menuItems = [
-  { name: "Accueil", href: "/" },
-  { name: "A propos", href: "/a-propos" },
-  { name: "Nos services", href: "/services" },
-  { name: "Contact", href: "/contact" },
-];
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "@/components/language-switcher";
 
 export const HeroHeader = () => {
   const [menuState, setMenuState] = React.useState(false);
   const [isScrolled, setIsScrolled] = React.useState(false);
+  const { t } = useTranslation();
+
+  const menuItems = [
+    { name: t("header.home"), href: "/" },
+    { name: t("header.about"), href: "/a-propos" },
+    { name: t("header.services"), href: "/services" },
+    { name: t("header.contact"), href: "/contact" },
+  ];
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -99,13 +102,14 @@ export const HeroHeader = () => {
                     <span>Login</span>
                   </Link>
                 </Button> */}
+                <LanguageSwitcher />
                 <Button
                   asChild
                   //   size=""
                   className={cn(isScrolled && "lg:hidden")}
                 >
                   <Link href="/contact">
-                    <span>Contactez-nous</span>
+                    <span>{t("header.contactUs")}</span>
                   </Link>
                 </Button>
                 <Button
@@ -114,7 +118,7 @@ export const HeroHeader = () => {
                   className={cn(isScrolled ? "lg:inline-flex" : "hidden")}
                 >
                   <Link href="/contact">
-                    <span>Contactez-nous</span>
+                    <span>{t("header.contactUs")}</span>
                   </Link>
                 </Button>
               </div>

@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import { ArrowRight, ChevronRight } from "lucide-react";
@@ -7,6 +9,7 @@ import { TextEffect } from "@/components/ui/text-effect";
 import { AnimatedGroup } from "@/components/ui/animated-group";
 import { HeroHeader } from "./header";
 import WorldMapDemo from "./world-map-demo";
+import { useTranslation } from "react-i18next";
 
 const transitionVariants = {
   item: {
@@ -29,6 +32,7 @@ const transitionVariants = {
 };
 
 export default function HeroSection() {
+  const { t } = useTranslation();
   return (
     <>
       <HeroHeader />
@@ -92,7 +96,7 @@ export default function HeroSection() {
                     className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
                   >
                     <span className="text-foreground text-sm">
-                      BRIDGE une immersion 24h/24 7j/7
+                      {t("hero.badge")}
                     </span>
                     <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
 
@@ -124,7 +128,7 @@ export default function HeroSection() {
                   as="h2"
                   className="mx-auto mt-8 max-w-4xl text-balance text-3xl max-md:font-semibold md:text-4xl lg:mt-16 xl:text-[3.25rem]"
                 >
-                  Le Guichet Diaspora &amp; Expat
+                  {t("hero.subtitle")}
                 </TextEffect>
                 <TextEffect
                   per="line"
@@ -134,8 +138,7 @@ export default function HeroSection() {
                   as="p"
                   className="mx-auto mt-8 max-w-2xl text-balance text-lg"
                 >
-                  La clé pour revenir, investir et vivre en RDC en toute
-                  sérénité.
+                  {t("hero.description")}
                 </TextEffect>
 
                 <AnimatedGroup
@@ -162,9 +165,7 @@ export default function HeroSection() {
                       className="rounded-xl px-5 text-base"
                     >
                       <Link href="#link">
-                        <span className="text-nowrap">
-                          Je commence mon parcours
-                        </span>
+                        <span className="text-nowrap">{t("hero.cta")}</span>
                       </Link>
                     </Button>
                   </div>
@@ -176,7 +177,7 @@ export default function HeroSection() {
                     className="h-10.5 rounded-xl px-5"
                   >
                     <Link href="#link">
-                      <span className="text-nowrap">Contact WhatsApp</span>
+                      <span className="text-nowrap">{t("hero.whatsapp")}</span>
                     </Link>
                   </Button>
                 </AnimatedGroup>
@@ -222,7 +223,7 @@ export default function HeroSection() {
           <div className="m-auto max-w-5xl px-6">
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="text-2xl font-semibold md:text-3xl">
-                Présence Internationale
+                {t("hero.internationalPresence")}
               </h2>
             </div>
 
@@ -236,7 +237,7 @@ export default function HeroSection() {
                   className="rounded-sm"
                 />
                 <span className="text-sm font-medium md:text-base">
-                  RDC Hub principal
+                  {t("hero.drcHub")}
                 </span>
               </div>
 
@@ -248,7 +249,9 @@ export default function HeroSection() {
                   height={26}
                   className="rounded-sm"
                 />
-                <span className="text-sm font-medium md:text-base">France</span>
+                <span className="text-sm font-medium md:text-base">
+                  {t("hero.france")}
+                </span>
               </div>
 
               <div className="flex items-center gap-3">
@@ -260,7 +263,7 @@ export default function HeroSection() {
                   className="rounded-sm"
                 />
                 <span className="text-sm font-medium md:text-base">
-                  Belgique
+                  {t("hero.belgium")}
                 </span>
               </div>
 
@@ -273,7 +276,7 @@ export default function HeroSection() {
                   className="rounded-sm"
                 />
                 <span className="text-sm font-medium md:text-base">
-                  Afrique du Sud
+                  {t("hero.southAfrica")}
                 </span>
               </div>
             </div>

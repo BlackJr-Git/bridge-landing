@@ -1,0 +1,323 @@
+{
+  "header": {
+    "home": "Accueil",
+    "about": "A propos",
+    "services": "Nos services",
+    "contact": "Contact",
+    "contactUs": "Contactez-nous"
+  },
+  "hero": {
+    "badge": "BRIDGE une immersion 24h/24 7j/7",
+    "title": "Bridge",
+    "subtitle": "Le Guichet Diaspora & Expat",
+    "description": "La clé pour revenir, investir et vivre en RDC en toute sérénité.",
+    "cta": "Je commence mon parcours",
+    "whatsapp": "Contact WhatsApp",
+    "internationalPresence": "Présence Internationale",
+    "drcHub": "RDC Hub principal",
+    "france": "France",
+    "belgium": "Belgique",
+    "southAfrica": "Afrique du Sud"
+  },
+  "positioning": {
+    "title": "Bridge, c'est quoi ?",
+    "description": "Bridge est le premier guichet d'accompagnement global pour :",
+    "diaspora": "Diaspora",
+    "expats": "Expatriés",
+    "investors": "Investisseurs",
+    "retirees": "Retraités",
+    "tagline": "Une seule porte d'entrée pour tous vos besoins."
+  },
+  "serviceSignature": {
+    "title": "Services",
+    "titleSuffix": "Signature",
+    "description": "Nos programmes phares pour vous accompagner.",
+    "or": "OU",
+    "services": {
+      "mobilite": {
+        "title": "Bridge Mobilité",
+        "features": ["Assistance à l'arrivée", "Chauffeur sécurisé", "Réception de colis", "Orientation locale"],
+        "premiumTitle": "Bridge Mobilité Premium",
+        "premiumSubtitle": "Accueil personnalisé & Service VIP",
+        "cta": "Découvrir"
+      },
+      "finance": {
+        "title": "Bridge Finance",
+        "titleSecondLine": "& Opportunités",
+        "features": ["Ouverture bancaire", "Assurance & financement", "Crédit & investissements"],
+        "tagline": "Sécuriser vos bases.\nOuvrir vos opportunités.",
+        "cta": "En savoir plus"
+      },
+      "nextgen": {
+        "title": "Bridge NextGen",
+        "features": ["Programme 18–26 ans", "Coaching & réseautage", "Mentorat & financement", "Implantation internationale"],
+        "tagline": "\"Ton idée mérite un pont\\nvers le monde.\"",
+        "cta": "Rejoindre"
+      },
+      "renaissance": {
+        "title": "Bridge Renaissance",
+        "features": ["Installation accompagnée", "Parcours santé & conseil", "Gestion patrimoniale", "Vie & bien-être"],
+        "tagline": "Votre expérience devient\nvotre nouvelle richesse.",
+        "cta": "En savoir plus"
+      }
+    }
+  },
+  "premiumServices": {
+    "title": "Nos Services Premium",
+    "description": "Une expertise 360° pour votre nouvelle vie.",
+    "allServices": "Tous les services",
+    "installation": "Installation",
+    "installationDesc": "Recherche de logement, déménagement international et conciergerie.",
+    "learnMore": "En savoir plus",
+    "bank": "Banque",
+    "mobility": "Mobilité",
+    "health": "Santé",
+    "businessLegal": "Business & Legal",
+    "businessLegalDesc": "Accompagnement administratif.",
+    "nextgen": "NextGen",
+    "retirement": "Retraite",
+    "savings": "Stratégies d'épargne",
+    "savingsDesc": "Optimisez vos rendements en RDC."
+  },
+  "clubBridge": {
+    "title": "Bridge",
+    "titleSuffix": "Club",
+    "description": "Communauté exclusive avec événements mensuels, networking diaspora et accès prioritaire aux opportunités",
+    "joinCommunity": "Rejoignez notre communauté exclusive",
+    "joinClub": "Rejoindre le Club Bridge",
+    "activities": {
+      "networking": {
+        "title": "Networking privé",
+        "description": "Rencontres exclusives entre membres de la communauté"
+      },
+      "tables": {
+        "title": "Tables action",
+        "description": "Sessions de travail collaboratif et échange d'idées"
+      },
+      "visits": {
+        "title": "Visites terrain",
+        "description": "Découverte d'opportunités et de projets concrets"
+      },
+      "coaching": {
+        "title": "Coaching installation",
+        "description": "Accompagnement personnalisé pour votre installation"
+      },
+      "finance": {
+        "title": "Éducation financière",
+        "description": "Formation sur l'investissement et la gestion financière"
+      },
+      "events": {
+        "title": "Soirées communauté",
+        "description": "Événements conviviaux pour tisser des liens durables"
+      }
+    }
+  },
+  "investmentEvent": {
+    "understandTitle": "Comprendre avant d'investir",
+    "understandDesc": "Coût de la vie RDC | Dépenser intelligemment | Stratégies d'épargne",
+    "contactAdvisor": "Contacter un conseiller",
+    "eventLabel": "Événement Exceptionnel",
+    "eventTitle": "NGUNDA",
+    "eventSubtitle": "La Foire Diaspora & Expat",
+    "eventDesc": "Le plus grand rassemblement annuel pour les futurs acteurs du développement de la RDC.",
+    "eventLocation": "Kinshasa | Octobre 2026",
+    "reserve": "Réserver"
+  },
+  "testimonials": {
+    "title": "Ils ont vécu ça…",
+    "titleHighlight": "puis Bridge",
+    "description": "Découvrez comment Bridge a transformé la vie de nos membres",
+    "before": "Avant",
+    "difficulty": "Difficulté",
+    "withBridge": "Avec Bridge",
+    "profiles": {
+      "diaspora": "Diaspora",
+      "expats": "Expats",
+      "investors": "Investisseurs",
+      "retirees": "Retraités"
+    }
+  },
+  "contactSection": {
+    "title": "Prêt à franchir le pas ?",
+    "description": "Laissez-nous vos coordonnées, un conseiller Bridge vous recontactera sous 24h.",
+    "fullName": "Nom Complet",
+    "fullNamePlaceholder": "Jean Dupont",
+    "email": "Email",
+    "emailPlaceholder": "jean@exemple.com",
+    "profile": "Votre Profil",
+    "profilePlaceholder": "Sélectionnez vos profils",
+    "message": "Message",
+    "messagePlaceholder": "Comment pouvons-nous vous aider ?",
+    "submit": "Envoyer ma demande"
+  },
+  "callToAction": {
+    "title": "Prêt à franchir le pont ?",
+    "description": "Contactez-nous et commencez votre accompagnement personnalisé dès aujourd'hui.",
+    "contact": "Nous contacter",
+    "whatsapp": "Discuter sur WhatsApp"
+  },
+  "footer": {
+    "about": "À propos",
+    "aboutText": "Le premier guichet pour la diaspora et les expatriés en République Démocratique du Congo. Nous transformons votre ambition en réalité.",
+    "quickLinks": "Liens Rapides",
+    "ourServices": "Nos Services",
+    "theClub": "Le Club Bridge",
+    "offices": "Bureaux",
+    "newsletter": "Abonnez-vous à notre newsletter",
+    "emailPlaceholder": "Votre email",
+    "subscribe": "S'abonner",
+    "copyright": "© {{year}} BRIDGE Digital Platform. Tous droits réservés.",
+    "legal": "Mentions Légales",
+    "privacy": "Confidentialité",
+    "terms": "CGU"
+  },
+  "whatsapp": {
+    "message": "Bonjour, je souhaite en savoir plus sur vos services Bridge.",
+    "ariaLabel": "Contactez-nous sur WhatsApp"
+  },
+  "servicesPage": {
+    "heroLabel": "Ce que nous faisons",
+    "heroTitle": "Nos",
+    "heroTitleHighlight": "Services",
+    "heroDesc": "Une gamme complète de services pensés pour vous accompagner à chaque étape. Qualité, fiabilité et résultats.",
+    "signatureService": "Service Signature",
+    "services": {
+      "installation": {
+        "title": "Installation & Vie",
+        "description": "Un accompagnement complet pour votre installation et votre adaptation au quotidien.",
+        "features": ["Installation administrative", "Recherche logement", "Orientation quotidienne", "Coach de vie / adaptation retour", "Accompagnement diaspora & expat"]
+      },
+      "banque": {
+        "title": "Banque & Assurance",
+        "description": "Bridge est votre facilitateur pour toutes vos démarches bancaires et d'assurance. Nous ne sommes pas une banque, mais votre pont vers les meilleures solutions.",
+        "features": ["Ouverture compte bancaire", "Crédit & Investissement", "Orientation solutions financières", "Assistance transfert d'argent", "Conseils assurance santé", "Assurance voyage", "Assurance habitation", "Assurance investissement"],
+        "note": "Bridge = facilitateur, pas banque."
+      },
+      "mobilite": {
+        "title": "Mobilité & Voyage",
+        "description": "De la réservation de vos billets à votre prise en charge à l'aéroport, nous gérons toute votre mobilité.",
+        "features": ["Billets d'avion", "Organisation court séjour", "Accueil & prise en charge aéroport", "Transport local"],
+        "highlight": "Accueil & prise en charge aéroport"
+      },
+      "sante": {
+        "title": "Santé & Assistance",
+        "description": "Votre santé est notre priorité. Accédez à un réseau médical fiable et à une assistance complète.",
+        "features": ["Orientation médicale", "Accès pharmacie", "Suivi santé", "Assistance hospitalière", "Assistance funéraire internationale"]
+      },
+      "business": {
+        "title": "Business & Investissement",
+        "description": "Transformez vos ambitions en projets concrets avec notre réseau de partenaires vérifiés.",
+        "features": ["Opportunités business", "Networking diaspora", "Mise en relation partenaires", "Accompagnement entrepreneurial"]
+      },
+      "lifestyle": {
+        "title": "Lifestyle",
+        "description": "Profitez pleinement de votre séjour avec nos services de conciergerie et d'expériences locales.",
+        "features": ["Restauration", "Conciergerie", "Expériences locales"]
+      },
+      "retraite": {
+        "title": "Bridge Renaissance",
+        "description": "Préparez sereinement votre retour et votre installation durable au pays.",
+        "features": ["Préparation retraite RDC", "Installation longue durée", "Planification financière locale"]
+      },
+      "nextgen": {
+        "title": "Bridge Next-Gen",
+        "description": "Préparez sereinement votre retour et votre installation durable au pays.",
+        "features": ["Programme 18–26 ans", "Coaching & réseautage", "Mentorat & financement", "Implantation internationale"]
+      }
+    }
+  },
+  "contactPage": {
+    "heroLabel": "Parlons de votre projet",
+    "heroTitle": "Contactez-",
+    "heroTitleHighlight": "nous",
+    "heroDesc": "Notre équipe est à votre écoute pour répondre à toutes vos questions et vous accompagner dans votre projet.",
+    "response24h": "Réponse sous 24h",
+    "contactInfo": "Informations de contact",
+    "offices": "Bureaux",
+    "officeDetails": ["Kinshasa, RDC — Hub principal", "Paris, France", "Bruxelles, Belgique", "Pretoria, Afrique du Sud"],
+    "phone": "Téléphone",
+    "email": "Email",
+    "hours": "Horaires",
+    "hoursDetails": ["Lun - Ven: 8h00 - 18h00", "Sam: 9h00 - 13h00"],
+    "quickResponse": "Besoin d'une réponse rapide ?",
+    "quickResponseDesc": "Contactez-nous directement sur WhatsApp pour une assistance immédiate.",
+    "chatWhatsApp": "Discuter sur WhatsApp",
+    "sendMessage": "Envoyez-nous un message",
+    "fullName": "Nom Complet",
+    "fullNamePlaceholder": "Jean Dupont",
+    "emailLabel": "Email",
+    "emailPlaceholder": "jean@exemple.com",
+    "phoneLabel": "Téléphone",
+    "phonePlaceholder": "+243 XXX XXX XXX",
+    "profileLabel": "Votre Profil",
+    "profilePlaceholder": "Sélectionnez vos profils",
+    "servicesLabel": "Services qui vous intéressent",
+    "servicesPlaceholder": "Sélectionnez les services",
+    "subjectLabel": "Sujet",
+    "subjectPlaceholder": "Objet de votre demande",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Décrivez votre projet ou posez vos questions...",
+    "submit": "Envoyer ma demande",
+    "meetUs": "Vous préférez nous rencontrer ?",
+    "meetUsDesc": "Prenez rendez-vous dans l'un de nos bureaux pour un entretien personnalisé.",
+    "bookAppointment": "Prendre rendez-vous",
+    "profiles": {
+      "diaspora": "Diaspora",
+      "expat": "Expat",
+      "investor": "Investisseur",
+      "nextgen": "NextGen (18-26 ans)",
+      "retiree": "Retraité",
+      "other": "Autre"
+    },
+    "servicesList": {
+      "installation": "Installation & Vie",
+      "banque": "Banque & Assurance",
+      "mobilite": "Mobilité & Voyage",
+      "sante": "Santé & Assistance",
+      "business": "Business & Investissement",
+      "lifestyle": "Lifestyle & Conciergerie",
+      "nextgen": "Bridge NextGen"
+    }
+  },
+  "aboutPage": {
+    "heroLabel": "Notre histoire",
+    "heroTitle": "À propos de",
+    "heroTitleHighlight": "Bridge",
+    "heroDesc": "Bridge est né d'un constat simple :",
+    "heroStatement": "Revenir, investir ou s'installer au pays ne devrait pas être un parcours d'obstacles.",
+    "whoWeAre": "Qui sommes-nous",
+    "dualExpertise": "Une double expertise",
+    "unique": "unique",
+    "whoWeAreDesc1": "Nous sommes un <strong>regroupement puissant</strong> de membres de la diaspora et d'acteurs locaux engagés, qui ont décidé de transformer les difficultés en opportunités.",
+    "whoWeAreDesc2": "Parce que nous connaissons <strong>les deux réalités</strong> : celle de l'extérieur… et celle du terrain.",
+    "outside": "L'extérieur",
+    "outsideDesc": "La réalité de la diaspora, ses défis et ses ambitions",
+    "ground": "Le terrain",
+    "groundDesc": "La connaissance locale, les partenaires, le réseau",
+    "bridgeBetween": "= Le pont entre les deux",
+    "statsLabel": "Nos chiffres",
+    "statsTitle": "Aujourd'hui, Bridge c'est :",
+    "stats": {
+      "partners": "Partenaires vérifiés et fiables",
+      "housing": "Logements sécurisés",
+      "people": "Personnes accompagnées",
+      "community": "Communauté forte diaspora & locaux"
+    },
+    "missionLabel": "Ce qui nous guide",
+    "missionTitle": "Notre mission est simple",
+    "values": {
+      "secure": {
+        "title": "Vous sécuriser",
+        "description": "Des partenaires vérifiés, des processus transparents, et un accompagnement de confiance."
+      },
+      "structure": {
+        "title": "Vous structurer",
+        "description": "Une méthodologie éprouvée pour transformer vos projets en réalisations concrètes."
+      },
+      "support": {
+        "title": "Vous accompagner",
+        "description": "Une présence humaine à chaque étape, de la préparation à l'installation."
+      }
+    }
+  }
+}

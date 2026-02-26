@@ -13,133 +13,104 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import CallToAction from "@/components/call-to-action";
-
-const services = [
-  {
-    id: "installation",
-    number: "01",
-    title: "Installation & Vie",
-    description:
-      "Un accompagnement complet pour votre installation et votre adaptation au quotidien.",
-    icon: Home,
-    image: "/installation.png",
-    features: [
-      "Installation administrative",
-      "Recherche logement",
-      "Orientation quotidienne",
-      "Coach de vie / adaptation retour",
-      "Accompagnement diaspora & expat",
-    ],
-  },
-  {
-    id: "banque",
-    number: "02",
-    title: "Banque & Assurance",
-    description:
-      "Bridge est votre facilitateur pour toutes vos démarches bancaires et d'assurance. Nous ne sommes pas une banque, mais votre pont vers les meilleures solutions.",
-    icon: Landmark,
-    image: "/fin_advices.jpg",
-    features: [
-      "Ouverture compte bancaire",
-      "Crédit & Investissement",
-      "Orientation solutions financières",
-      "Assistance transfert d'argent",
-      "Conseils assurance santé",
-      "Assurance voyage",
-      "Assurance habitation",
-      "Assurance investissement",
-    ],
-    note: "Bridge = facilitateur, pas banque.",
-  },
-  {
-    id: "mobilite",
-    number: "03",
-    title: "Mobilité & Voyage",
-    description:
-      "De la réservation de vos billets à votre prise en charge à l'aéroport, nous gérons toute votre mobilité.",
-    icon: Plane,
-    image: "/welcome_img.jpg",
-    features: [
-      "Billets d'avion",
-      "Organisation court séjour",
-      "Accueil & prise en charge aéroport",
-      "Transport local",
-    ],
-    highlight: "Accueil & prise en charge aéroport",
-  },
-  {
-    id: "sante",
-    number: "04",
-    title: "Santé & Assistance",
-    description:
-      "Votre santé est notre priorité. Accédez à un réseau médical fiable et à une assistance complète.",
-    icon: HeartPulse,
-    image: "/health-insurance.png",
-    features: [
-      "Orientation médicale",
-      "Accès pharmacie",
-      "Suivi santé",
-      "Assistance hospitalière",
-      "Assistance funéraire internationale",
-    ],
-  },
-  {
-    id: "business",
-    number: "05",
-    title: "Business & Investissement",
-    description:
-      "Transformez vos ambitions en projets concrets avec notre réseau de partenaires vérifiés.",
-    icon: Briefcase,
-    image: "/net_events.jpg",
-    features: [
-      "Opportunités business",
-      "Networking diaspora",
-      "Mise en relation partenaires",
-      "Accompagnement entrepreneurial",
-    ],
-  },
-  {
-    id: "lifestyle",
-    number: "06",
-    title: "Lifestyle",
-    description:
-      "Profitez pleinement de votre séjour avec nos services de conciergerie et d'expériences locales.",
-    icon: Sparkles,
-    image: "/lifestyle.png",
-    features: ["Restauration", "Conciergerie", "Expériences locales"],
-  },
-  {
-    id: "retraite",
-    number: "07",
-    title: "Bridge Renaissance",
-    description:
-      "Préparez sereinement votre retour et votre installation durable au pays.",
-    icon: Clock,
-    image: "/retraite.png",
-    features: [
-      "Préparation retraite RDC",
-      "Installation longue durée",
-      "Planification financière locale",
-    ],
-  },
-  {
-    id: "nextgen",
-    number: "08",
-    title: "Bridge Next-Gen",
-    description:
-      "Préparez sereinement votre retour et votre installation durable au pays.",
-    icon: Clock,
-    image: "/group_workstation.jpg",
-    features: [
-      "Programme 18–26 ans",
-      "Coaching & réseautage",
-      "Mentorat & financement",
-      "Implantation internationale",
-    ],
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export default function ServicesPage() {
+  const { t } = useTranslation();
+
+  const services = [
+    {
+      id: "installation",
+      number: "01",
+      title: t("servicesPage.services.installation.title"),
+      description: t("servicesPage.services.installation.description"),
+      icon: Home,
+      image: "/installation.png",
+      features: t("servicesPage.services.installation.features", {
+        returnObjects: true,
+      }) as string[],
+    },
+    {
+      id: "banque",
+      number: "02",
+      title: t("servicesPage.services.banque.title"),
+      description: t("servicesPage.services.banque.description"),
+      icon: Landmark,
+      image: "/fin_advices.jpg",
+      features: t("servicesPage.services.banque.features", {
+        returnObjects: true,
+      }) as string[],
+      note: t("servicesPage.services.banque.note"),
+    },
+    {
+      id: "mobilite",
+      number: "03",
+      title: t("servicesPage.services.mobilite.title"),
+      description: t("servicesPage.services.mobilite.description"),
+      icon: Plane,
+      image: "/welcome_img.jpg",
+      features: t("servicesPage.services.mobilite.features", {
+        returnObjects: true,
+      }) as string[],
+      highlight: t("servicesPage.services.mobilite.highlight"),
+    },
+    {
+      id: "sante",
+      number: "04",
+      title: t("servicesPage.services.sante.title"),
+      description: t("servicesPage.services.sante.description"),
+      icon: HeartPulse,
+      image: "/health-insurance.png",
+      features: t("servicesPage.services.sante.features", {
+        returnObjects: true,
+      }) as string[],
+    },
+    {
+      id: "business",
+      number: "05",
+      title: t("servicesPage.services.business.title"),
+      description: t("servicesPage.services.business.description"),
+      icon: Briefcase,
+      image: "/net_events.jpg",
+      features: t("servicesPage.services.business.features", {
+        returnObjects: true,
+      }) as string[],
+    },
+    {
+      id: "lifestyle",
+      number: "06",
+      title: t("servicesPage.services.lifestyle.title"),
+      description: t("servicesPage.services.lifestyle.description"),
+      icon: Sparkles,
+      image: "/lifestyle.png",
+      features: t("servicesPage.services.lifestyle.features", {
+        returnObjects: true,
+      }) as string[],
+    },
+    {
+      id: "retraite",
+      number: "07",
+      title: t("servicesPage.services.retraite.title"),
+      description: t("servicesPage.services.retraite.description"),
+      icon: Clock,
+      image: "/retraite.png",
+      features: t("servicesPage.services.retraite.features", {
+        returnObjects: true,
+      }) as string[],
+    },
+    {
+      id: "nextgen",
+      number: "08",
+      title: t("servicesPage.services.nextgen.title"),
+      description: t("servicesPage.services.nextgen.description"),
+      icon: Clock,
+      image: "/group_workstation.jpg",
+      features: t("servicesPage.services.nextgen.features", {
+        returnObjects: true,
+      }) as string[],
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -147,14 +118,16 @@ export default function ServicesPage() {
         <div className="container relative mx-auto max-w-6xl px-6">
           <div className="text-center">
             <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary">
-              Ce que nous faisons
+              {t("servicesPage.heroLabel")}
             </p>
             <h1 className="mb-8 font-[batangas] text-5xl font-bold md:text-7xl lg:text-8xl">
-              Nos <span className="text-primary">Services</span>
+              {t("servicesPage.heroTitle")}{" "}
+              <span className="text-primary">
+                {t("servicesPage.heroTitleHighlight")}
+              </span>
             </h1>
             <p className="mx-auto max-w-2xl text-lg leading-relaxed text-white/70 md:text-xl">
-              Une gamme complète de services pensés pour vous accompagner à
-              chaque étape. Qualité, fiabilité et résultats.
+              {t("servicesPage.heroDesc")}
             </p>
           </div>
 
@@ -235,7 +208,7 @@ export default function ServicesPage() {
                             {feature}
                             {service.highlight === feature && (
                               <span className="ml-2 inline-flex items-center rounded-full bg-[#EF4F67]/10 px-2 py-0.5 text-xs font-medium text-[#EF4F67]">
-                                Service Signature
+                                {t("servicesPage.signatureService")}
                               </span>
                             )}
                           </span>

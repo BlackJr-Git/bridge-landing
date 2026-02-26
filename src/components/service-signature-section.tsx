@@ -1,86 +1,84 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const services = [
-  {
-    id: "mobilite",
-    title: "Bridge Mobilité",
-    image: "/welcome_img.jpg",
-    features: [
-      "Assistance à l'arrivée",
-      "Chauffeur sécurisé",
-      "Réception de colis",
-      "Orientation locale",
-    ],
-    premium: {
-      title: "Bridge Mobilité Premium",
-      subtitle: "Accueil personnalisé & Service VIP",
-    },
-    tagline: null,
-    cta: "Découvrir",
-    ctaVariant: "default" as const,
-  },
-  {
-    id: "finance",
-    title: "Bridge Finance",
-    titleSecondLine: "& Opportunités",
-    image: "/assistance_img.jpg",
-    features: [
-      "Ouverture bancaire",
-      "Assurance & financement",
-      "Crédit & investissements",
-    ],
-    premium: null,
-    tagline: "Sécuriser vos bases.\nOuvrir vos opportunités.",
-    cta: "En savoir plus",
-    ctaVariant: "outline" as const,
-  },
-  {
-    id: "nextgen",
-    title: "Bridge NextGen",
-    image: "/group_workstation.jpg",
-    features: [
-      "Programme 18–26 ans",
-      "Coaching & réseautage",
-      "Mentorat & financement",
-      "Implantation internationale",
-    ],
-    premium: null,
-    tagline: '"Ton idée mérite un pont\\nvers le monde."',
-    isQuote: true,
-    cta: "Rejoindre",
-    ctaVariant: "default" as const,
-  },
-  {
-    id: "renaissance",
-    title: "Bridge Renaissance",
-    image: "/retraite.png",
-    features: [
-      "Installation accompagnée",
-      "Parcours santé & conseil",
-      "Gestion patrimoniale",
-      "Vie & bien-être",
-    ],
-    premium: null,
-    tagline: "Votre expérience devient\nvotre nouvelle richesse.",
-    cta: "En savoir plus",
-    ctaVariant: "outline" as const,
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export default function ServiceSignatureSection() {
+  const { t } = useTranslation();
+
+  const services = [
+    {
+      id: "mobilite",
+      title: t("serviceSignature.services.mobilite.title"),
+      image: "/welcome_img.jpg",
+      features: t("serviceSignature.services.mobilite.features", {
+        returnObjects: true,
+      }) as string[],
+      premium: {
+        title: t("serviceSignature.services.mobilite.premiumTitle"),
+        subtitle: t("serviceSignature.services.mobilite.premiumSubtitle"),
+      },
+      tagline: null,
+      cta: t("serviceSignature.services.mobilite.cta"),
+      ctaVariant: "default" as const,
+    },
+    {
+      id: "finance",
+      title: t("serviceSignature.services.finance.title"),
+      titleSecondLine: t("serviceSignature.services.finance.titleSecondLine"),
+      image: "/assistance_img.jpg",
+      features: t("serviceSignature.services.finance.features", {
+        returnObjects: true,
+      }) as string[],
+      premium: null,
+      tagline: t("serviceSignature.services.finance.tagline"),
+      cta: t("serviceSignature.services.finance.cta"),
+      ctaVariant: "outline" as const,
+    },
+    {
+      id: "nextgen",
+      title: t("serviceSignature.services.nextgen.title"),
+      image: "/group_workstation.jpg",
+      features: t("serviceSignature.services.nextgen.features", {
+        returnObjects: true,
+      }) as string[],
+      premium: null,
+      tagline: t("serviceSignature.services.nextgen.tagline"),
+      isQuote: true,
+      cta: t("serviceSignature.services.nextgen.cta"),
+      ctaVariant: "default" as const,
+    },
+    {
+      id: "renaissance",
+      title: t("serviceSignature.services.renaissance.title"),
+      image: "/retraite.png",
+      features: t("serviceSignature.services.renaissance.features", {
+        returnObjects: true,
+      }) as string[],
+      premium: null,
+      tagline: t("serviceSignature.services.renaissance.tagline"),
+      cta: t("serviceSignature.services.renaissance.cta"),
+      ctaVariant: "outline" as const,
+    },
+  ];
+
   return (
     <section className="bg-primary/10 py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-4xl font-black md:text-5xl">
-            <span className="font-[batangas] text-primary">Services</span>{" "}
-            <span className="text-secondary">Signature</span>
+            <span className="font-[batangas] text-primary">
+              {t("serviceSignature.title")}
+            </span>{" "}
+            <span className="text-secondary">
+              {t("serviceSignature.titleSuffix")}
+            </span>
           </h2>
           <p className="text-muted-foreground mx-auto max-w-2xl text-lg">
-            Nos programmes phares pour vous accompagner.
+            {t("serviceSignature.description")}
           </p>
         </div>
 
@@ -136,7 +134,7 @@ export default function ServiceSignatureSection() {
                   {service.premium && (
                     <div className="mb-4 border-t border-gray-100 pt-4">
                       <p className="text-center text-xs font-semibold uppercase tracking-wide text-gray-400">
-                        OU
+                        {t("serviceSignature.or")}
                       </p>
                       <p className="mt-2 text-center text-sm font-bold text-primary">
                         {service.premium.title}

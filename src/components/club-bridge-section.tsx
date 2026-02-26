@@ -11,45 +11,47 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 export default function ClubBridgeSection() {
   const [activeIndex, setActiveIndex] = React.useState(0);
+  const { t } = useTranslation();
 
   const activities = [
     {
       icon: Users,
-      title: "Networking privé",
-      description: "Rencontres exclusives entre membres de la communauté",
+      title: t("clubBridge.activities.networking.title"),
+      description: t("clubBridge.activities.networking.description"),
       image: "/private_network.png",
     },
     {
       icon: MessageSquare,
-      title: "Tables action",
-      description: "Sessions de travail collaboratif et échange d'idées",
+      title: t("clubBridge.activities.tables.title"),
+      description: t("clubBridge.activities.tables.description"),
       image: "/group_workstation.jpg",
     },
     {
       icon: MapPin,
-      title: "Visites terrain",
-      description: "Découverte d'opportunités et de projets concrets",
+      title: t("clubBridge.activities.visits.title"),
+      description: t("clubBridge.activities.visits.description"),
       image: "/ground_visit.jpg",
     },
     {
       icon: GraduationCap,
-      title: "Coaching installation",
-      description: "Accompagnement personnalisé pour votre installation",
+      title: t("clubBridge.activities.coaching.title"),
+      description: t("clubBridge.activities.coaching.description"),
       image: "/installation.png",
     },
     {
       icon: TrendingUp,
-      title: "Éducation financière",
-      description: "Formation sur l'investissement et la gestion financière",
+      title: t("clubBridge.activities.finance.title"),
+      description: t("clubBridge.activities.finance.description"),
       image: "/fin_advices.jpg",
     },
     {
       icon: Sparkles,
-      title: "Soirées communauté",
-      description: "Événements conviviaux pour tisser des liens durables",
+      title: t("clubBridge.activities.events.title"),
+      description: t("clubBridge.activities.events.description"),
       image: "/ce.png",
     },
   ];
@@ -73,8 +75,7 @@ export default function ClubBridgeSection() {
             </h2>
           </div>
           <p className="text-muted-foreground mx-auto mb-8 max-w-2xl text-lg">
-            Communauté exclusive avec événements mensuels, networking diaspora
-            et accès prioritaire aux opportunités
+            {t("clubBridge.description")}
           </p>
         </div>
 
@@ -178,11 +179,11 @@ export default function ClubBridgeSection() {
 
         <div className="bg-primary border-primary/20 rounded-2xl border p-8 text-center">
           <p className="mb-6 text-xl font-bold text-primary-foreground">
-            Rejoignez notre communauté exclusive
+            {t("clubBridge.joinCommunity")}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button size="lg" className="font-bold bg-secondary">
-              Rejoindre le Club Bridge
+              {t("clubBridge.joinClub")}
             </Button>
             {/* <Button size="lg" variant="outline" className="font-bold">
               En savoir plus
