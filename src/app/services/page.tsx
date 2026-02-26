@@ -111,7 +111,7 @@ const services = [
   {
     id: "retraite",
     number: "07",
-    title: "Bridge NextGen",
+    title: "Bridge Renaissance",
     description:
       "Préparez sereinement votre retour et votre installation durable au pays.",
     icon: Clock,
@@ -120,6 +120,21 @@ const services = [
       "Préparation retraite RDC",
       "Installation longue durée",
       "Planification financière locale",
+    ],
+  },
+  {
+    id: "nextgen",
+    number: "08",
+    title: "Bridge Next-Gen",
+    description:
+      "Préparez sereinement votre retour et votre installation durable au pays.",
+    icon: Clock,
+    image: "/group_workstation.jpg",
+    features: [
+      "Programme 18–26 ans",
+      "Coaching & réseautage",
+      "Mentorat & financement",
+      "Implantation internationale",
     ],
   },
 ];

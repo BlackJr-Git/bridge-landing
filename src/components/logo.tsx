@@ -14,6 +14,7 @@ export const Logo = ({
       <Image
         src="/logo-bridge.png"
         alt="Bridge Logo"
+        // className={cn("size-16", className)}
         width={100}
         height={100}
       />

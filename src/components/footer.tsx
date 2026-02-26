@@ -34,12 +34,12 @@ export default function Footer() {
           <Link
             href="/"
             aria-label="go home"
-            className="flex flex-col justify-center items-center"
+            className="flex flex-col justify-center items-center pb-12"
           >
-            <LogoIcon className="w-28 h-28" />
-            <span className="font-[batangas] text-3xl text-primary">
+            <Logo />
+            {/* <span className="font-[batangas] text-3xl text-primary">
               Bridge
-            </span>
+            </span> */}
           </Link>
         </div>
         <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
