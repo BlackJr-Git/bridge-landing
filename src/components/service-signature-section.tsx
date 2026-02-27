@@ -13,7 +13,7 @@ export default function ServiceSignatureSection() {
     {
       id: "mobilite",
       title: t("serviceSignature.services.mobilite.title"),
-      image: "/welcome_img.jpg",
+      image: "/welcome_img.png",
       features: t("serviceSignature.services.mobilite.features", {
         returnObjects: true,
       }) as string[],
@@ -29,7 +29,7 @@ export default function ServiceSignatureSection() {
       id: "finance",
       title: t("serviceSignature.services.finance.title"),
       titleSecondLine: t("serviceSignature.services.finance.titleSecondLine"),
-      image: "/assistance_img.jpg",
+      image: "/assistance_img.png",
       features: t("serviceSignature.services.finance.features", {
         returnObjects: true,
       }) as string[],
@@ -41,7 +41,7 @@ export default function ServiceSignatureSection() {
     {
       id: "nextgen",
       title: t("serviceSignature.services.nextgen.title"),
-      image: "/group_workstation.jpg",
+      image: "/group_workstation.png",
       features: t("serviceSignature.services.nextgen.features", {
         returnObjects: true,
       }) as string[],

@@ -63,8 +63,8 @@
     }
   },
   "premiumServices": {
-    "title": "Nos Services Premium",
-    "description": "Une expertise 360° pour votre nouvelle vie.",
+    "title": "Nos Services",
+    "description": "Un accompagnement 360° pour votre nouvelle vie.",
     "allServices": "Tous les services",
     "installation": "Installation",
     "installationDesc": "Recherche de logement, déménagement international et conciergerie.",

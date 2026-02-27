@@ -39,7 +39,7 @@ const profiles: Profile[] = [
     testimonials: [
       {
         name: "Mukendi K.",
-        avatar: "/retraite/retraite_h_1.png",
+        avatar: "/diaspora/diaspora_h_1.jpg",
         location: "Paris → Kinshasa",
         avant: "Je suis arrivé à Kinshasa sans personne pour m'orienter.",
         difficulte: "Transport, démarches confuses.",
@@ -48,7 +48,7 @@ const profiles: Profile[] = [
       },
       {
         name: "Nsimba M.",
-        avatar: "/retraite/retraite_f_1.jpg",
+        avatar: "/diaspora/diaspora_f_1.jpg",
         location: "Bruxelles → Kinshasa",
         avant: "Mes colis mettaient des semaines à arriver.",
         difficulte: "Perte de temps et d'argent.",
@@ -56,7 +56,7 @@ const profiles: Profile[] = [
       },
       {
         name: "Tshiala J.",
-        avatar: "/retraite/retraite_h_2.jpg",
+        avatar: "/diaspora/diaspora_h_2.jpg",
         location: "Lyon → Lubumbashi",
         avant:
           "Je voulais ouvrir un compte mais je ne savais pas par où commencer.",
@@ -65,7 +65,7 @@ const profiles: Profile[] = [
       },
       {
         name: "Kabongo S.",
-        avatar: "/retraite/retraite_f_2.jpg",
+        avatar: "/diaspora/diaspora_f_2.jpg",
         location: "Londres → Kinshasa",
         avant: "Chaque retour au pays était stressant.",
         difficulte: "Logistique imprévisible.",
@@ -73,7 +73,7 @@ const profiles: Profile[] = [
       },
       {
         name: "Mbuyi C.",
-        avatar: "/retraite/retraite_h_3.jpg",
+        avatar: "/diaspora/diaspora_h_3.jpg",
         location: "Genève → Goma",
         avant: "Je voulais investir mais je craignais les risques.",
         difficulte: "Manque de structure.",
@@ -81,7 +81,7 @@ const profiles: Profile[] = [
       },
       {
         name: "Kalala F.",
-        avatar: "/retraite/retraite_f_3.jpg",
+        avatar: "/diaspora/diaspora_f_3.jpg",
         location: "Montréal → Kinshasa",
         avant: "Je me sentais seul dans mes démarches.",
         difficulte: "Absence de réseau.",
@@ -96,7 +96,7 @@ const profiles: Profile[] = [
     testimonials: [
       {
         name: "Ilunga T.",
-        avatar: "/retraite/retraite_h_1.png",
+        avatar: "/expat/expat_h_1.jpg",
         location: "Expatrié - Kinshasa",
         avant: "Trouver un logement adapté était compliqué.",
         difficulte: "Manque de contacts fiables.",
@@ -104,7 +104,7 @@ const profiles: Profile[] = [
       },
       {
         name: "Mwamba A.",
-        avatar: "/retraite/retraite_f_1.jpg",
+        avatar: "/expat/expat_f_1.jpg",
         location: "Expatriée - Lubumbashi",
         avant: "Je ne comprenais pas les procédures locales.",
         difficulte: "Complexité administrative.",
@@ -112,7 +112,7 @@ const profiles: Profile[] = [
       },
       {
         name: "Kasongo M.",
-        avatar: "/retraite/retraite_h_2.jpg",
+        avatar: "/expat/expat_h_2.jpg",
         location: "Expatrié - Goma",
         avant: "Je n'avais pas de réseau professionnel.",
         difficulte: "Isolement.",
@@ -120,7 +120,7 @@ const profiles: Profile[] = [
       },
       {
         name: "Nkulu E.",
-        avatar: "/retraite/retraite_f_2.jpg",
+        avatar: "/expat/expat_f_2.jpg",
         location: "Expatriée - Kinshasa",
         avant: "Je craignais pour ma sécurité.",
         difficulte: "Méconnaissance du terrain.",
@@ -128,7 +128,7 @@ const profiles: Profile[] = [
       },
       {
         name: "Tshimanga D.",
-        avatar: "/retraite/retraite_h_3.jpg",
+        avatar: "/expat/expat_h_3.jpg",
         location: "Expatrié - Matadi",
         avant: "Mon arrivée a été improvisée.",
         difficulte: "Perte de temps.",
@@ -136,7 +136,7 @@ const profiles: Profile[] = [
       },
       {
         name: "Mpiana L.",
-        avatar: "/retraite/retraite_f_3.jpg",
+        avatar: "/expat/expat_f_3.jpg",
         location: "Expatriée - Kinshasa",
         avant: "Je voulais investir localement.",
         difficulte: "Manque d'accompagnement.",
@@ -151,7 +151,7 @@ const profiles: Profile[] = [
     testimonials: [
       {
         name: "Kabamba B.",
-        avatar: "/retraite/retraite_h_1.png",
+        avatar: "/invest/invest_h_1.jpg",
         location: "Investisseur - Immobilier",
         avant: "Mon premier projet n'a pas abouti.",
         difficulte: "Mauvais interlocuteurs.",
@@ -159,7 +159,7 @@ const profiles: Profile[] = [
       },
       {
         name: "Mutombo N.",
-        avatar: "/retraite/retraite_f_1.jpg",
+        avatar: "/invest/invest_f_1.jpg",
         location: "Investisseuse - Commerce",
         avant: "Je ne comprenais pas les procédures financières.",
         difficulte: "Risque juridique.",
@@ -167,7 +167,7 @@ const profiles: Profile[] = [
       },
       {
         name: "Ngoy P.",
-        avatar: "/retraite/retraite_h_2.jpg",
+        avatar: "/invest/invest_h_2.jpg",
         location: "Investisseur - Agriculture",
         avant: "Impossible d'obtenir un financement.",
         difficulte: "Dossier incomplet.",
@@ -175,7 +175,7 @@ const profiles: Profile[] = [
       },
       {
         name: "Tshilanda C.",
-        avatar: "/retraite/retraite_f_2.jpg",
+        avatar: "/invest/invest_f_2.jpg",
         location: "Investisseuse - Tech",
         avant: "Je manquais d'informations fiables.",
         difficulte: "Décision retardée.",
@@ -183,7 +183,7 @@ const profiles: Profile[] = [
       },
       {
         name: "Kalonji J.",
-        avatar: "/retraite/retraite_h_3.jpg",
+        avatar: "/invest/invest_h_3.jpg",
         location: "Investisseur - Tourisme",
         avant: "Je craignais les pertes.",
         difficulte: "Absence de cadre sécurisé.",
@@ -191,7 +191,7 @@ const profiles: Profile[] = [
       },
       {
         name: "Numbi I.",
-        avatar: "/retraite/retraite_f_3.jpg",
+        avatar: "/invest/invest_f_3.jpg",
         location: "Investisseuse - Services",
         avant: "Je travaillais seul.",
         difficulte: "Pas de relais local.",
