@@ -28,13 +28,13 @@ export default function ClubBridgeSection() {
       icon: MessageSquare,
       title: t("clubBridge.activities.tables.title"),
       description: t("clubBridge.activities.tables.description"),
-      image: "/group_workstation.jpg",
+      image: "/group_workstation.png",
     },
     {
       icon: MapPin,
       title: t("clubBridge.activities.visits.title"),
       description: t("clubBridge.activities.visits.description"),
-      image: "/ground_visit.jpg",
+      image: "/ground_visit.png",
     },
     {
       icon: GraduationCap,

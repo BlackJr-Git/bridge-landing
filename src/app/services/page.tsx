@@ -48,7 +48,7 @@ export default function ServicesPage() {
       title: t("servicesPage.services.mobilite.title"),
       description: t("servicesPage.services.mobilite.description"),
       icon: Plane,
-      image: "/welcome_img.jpg",
+      image: "/welcome_img.png",
       features: t("servicesPage.services.mobilite.features", {
         returnObjects: true,
       }) as string[],
@@ -71,7 +71,7 @@ export default function ServicesPage() {
       title: t("servicesPage.services.business.title"),
       description: t("servicesPage.services.business.description"),
       icon: Briefcase,
-      image: "/net_events.jpg",
+      image: "/private_network.png",
       features: t("servicesPage.services.business.features", {
         returnObjects: true,
       }) as string[],
@@ -104,7 +104,7 @@ export default function ServicesPage() {
       title: t("servicesPage.services.nextgen.title"),
       description: t("servicesPage.services.nextgen.description"),
       icon: Clock,
-      image: "/group_workstation.jpg",
+      image: "/group_workstation.png",
       features: t("servicesPage.services.nextgen.features", {
         returnObjects: true,
       }) as string[],
